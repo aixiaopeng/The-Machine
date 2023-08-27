@@ -1,0 +1,42 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Audio Log</NameField>
+
+    <DialogueNode>
+        <Name>Main</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>记录 16</Page>
+            <Page>又一个异常寒冷的冬天，这真是难以忍受。</Page>
+            <Page>我担心我们的食物储备会用完，我们永远也无法捕到足够我们这么久的食物……</Page>
+            <Page>可怜的孩子们，饥饿对他们来说太难了。</Page>
+            <Page>记录 27</Page>
+            <Page>今天谁也没捕到东西。先是迟来的解冻，现在又这个！？</Page>
+            <Page>我猜鱼儿和我们一样难以应对这寒冷。</Page>
+            <Page>记录 36</Page>
+            <Page>南村的气象学家说这个冬天会比上一个冬天更糟糕。</Page>
+            <Page>我不知道我们怎么能够度过这个冬天，我们已经不得不开始烧家具取暖……</Page>
+            <Page>我听说太阳鱼在深夜越来越多时间做实验，我为他们担心。</Page>
+            <Page>记录 40</Page>
+            <Page>昨晚我听到了一声爆炸，醒来时看到太阳鱼坐在一种冒火的设备上飞了起来！</Page>
+            <Page>鲑鱼和鲈鱼对此产生了兴趣，他们认为这会以某种方式解决我们的问题。</Page>
+            <Page>我不知道“太空飞船”怎么会填饱我们的肚子。</Page>
+            <Page>记录 46</Page>
+            <Page>太阳鱼的实验真是一道奇观。</Page>
+            <Page>自从鲑鱼开始帮助管理，鲈鱼开始驾驶后，爆炸的频率大大降低了。</Page>
+            <Page>也许他们的太空飞船能带我们去一个温暖的地方……</Page>
+            <Page>记录 52</Page>
+            <Page>鲈鱼把他们的太空飞船降落在另一个星球上！</Page>
+            <Page>他们发回无线电，说那里的空气温暖而且可呼吸，地表有新鲜的水！还有鱼！</Page>
+            <Page>他们说我们应该去那里，但我们怎么能够全都去呢？</Page>
+            <Page>记录 57</Page>
+            <Page>鲑鱼说我们应该尽量轻装上阵，那里的空间不多。</Page>
+            <Page>我以为我会因为离开我们的老家，留下所有的东西和历史而感到伤心……</Page>
+            <Page>但我只是为我们大家都活着感到高兴。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>space_program_explore</FactID>
+            <FactID>ice_age_explore</FactID>
+        </RevealFacts>
+    </DialogueNode>
+</DialogueTree>

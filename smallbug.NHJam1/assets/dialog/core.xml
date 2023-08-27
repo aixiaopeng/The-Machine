@@ -1,0 +1,38 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Core Access Terminal</NameField>
+
+    <DialogueNode>
+        <Name>Start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>正在分析凭据...</Page>
+            <Page>检测到管理员，授予访问权限</Page>
+            <Page>禁用武器？</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>是</Text>
+                <DialogueTarget>yok</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>好的</Text>
+                <DialogueTarget>yok</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>yok</Name>
+        <Dialogue>
+            <Page>武器已被禁用</Page>
+            <Page>使用南极的访问舱返回</Page>
+            <Page>...</Page>
+            <Page>感谢游玩！</Page>
+            <Page>抱歉，这个结局有点突然，我没时间做得更好一些。</Page>
+            <Page>希望你喜欢！考虑到这只是一个在短短（刚刚超过）一个星期内完成的模组，它的雄心壮志太过高涨。</Page>
+            <Page>但是我制作它时玩得很开心！</Page>
+            <Page>如果你从南极的奇点穿越，一切都不会改变，时间循环仍将继续，但你可以继续探索这个恒星系统。</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

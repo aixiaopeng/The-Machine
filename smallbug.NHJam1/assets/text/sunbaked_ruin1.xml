@@ -1,0 +1,27 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+    <TextBlock>
+        <ID>1</ID>
+        <Text>MAKALU: 第一个节点已完成，我必须说这真是令人印象深刻！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>2</ID>
+        <ParentID>1</ParentID>
+        <Text>SAMATU: 伙计们，干得不错，让我们看看能否保持这个速度继续下一个节点！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>3</ID>
+        <ParentID>1</ParentID>
+        <Text>SILANA: 我为此感到非常自豪，我必须说这是我参与过的最大的项目！规格非常具有挑战性，这个节点吸收了大量的能量！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>4</ID>
+        <ParentID>3</ParentID>
+        <Text>MAKALU: 让能量收集器成为碟形是个很棒的主意，Silana。一个团队合作得这么有条不紊真是令人惊叹！（还有无限的预算……）</Text>
+    </TextBlock>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>node_1_explore</FactID>
+            <Condition>1</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+</NomaiObject>

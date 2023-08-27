@@ -1,0 +1,44 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Gar</NameField>
+
+   <DialogueNode>
+    <Name>Start</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+        <Page>你在那里，你来得正好！</Page>
+        <Page>帮助我们搬家，我们要离开这个臭石头！</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+        <DialogueOption>
+            <Text>你们为什么要搬家？</Text>
+            <DialogueTarget>Why</DialogueTarget>
+        </DialogueOption>
+        <DialogueOption>
+            <Text>我现在很忙，有一项重要任务。</Text>
+            <DialogueTarget>Busy</DialogueTarget>
+        </DialogueOption>
+    </DialogueOptionsList>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>Why</Name>
+    <Dialogue>
+        <Page>这里太热了，空气臭，这些频繁的闪光刺痛我的眼睛，我们不得不吃藻类，而且西部定居点已经被烧毁了！</Page>
+        <Page>我再也不能忍受在这里待一天，实际上它可能会杀死我，杀死我们所有人！我和Stoneroller要离开了！</Page>
+        <Page>现在，你会帮助我们吗？</Page>
+    </Dialogue>
+    <RevealFacts>
+        <FactID>underpopulated_explore</FactID>
+    </RevealFacts>
+    <DialogueTarget>Start</DialogueTarget>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>Busy</Name>
+    <Dialogue>
+        <Page>太忙了，没时间帮助一个老人和他的孩子吗？</Page>
+        <Page>不不，我明白，只是去给我找一下Minnow。</Page>
+    </Dialogue>
+</DialogueNode>
+</DialogueTree>

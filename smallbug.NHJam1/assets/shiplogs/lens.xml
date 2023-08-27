@@ -1,0 +1,43 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>lens</ID>
+
+    <Entry>
+        <ID>lens_main</ID>
+        <Name>透镜</Name>
+        <Curiosity>机器</Curiosity>
+
+        <RumorFact>
+            <ID>lens_rumor</ID>
+            <SourceID>tides_ghost_ruin</SourceID>
+            <Text>先驱者家园系统提到了“透镜阵列”的交付。</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>lens_explore</ID>
+            <Text>在太阳系边缘静止地停着一个巨大的先驱者空间站。</Text>
+        </ExploreFact>
+
+        <Entry>
+            <ID>lens_computer</ID>
+            <Name>透镜计算机终端</Name>
+            <Curiosity>机器</Curiosity>
+
+            <ExploreFact>
+                <ID>lens_malfunctioning_explore</ID>
+                <Text>透镜上的计算机终端似乎表明先驱者的武器出现了故障，触发了一个应急系统，冷冻舱被禁用。</Text>
+            </ExploreFact>
+        </Entry>
+
+        <Entry>
+            <ID>lens_recording</ID>
+            <Name>透镜记录</Name>
+            <Curiosity>战争</Curiosity>
+
+            <ExploreFact>
+                <ID>lens_recording_explore</ID>
+                <Text>这个系统中的先驱者聚集在透镜前讨论了来自他们家园系统的无线电静默。尽管存在永远不会再次醒来的风险，他们最终决定在核心的冷冻舱中休眠。</Text>
+            </ExploreFact>
+        </Entry>
+    </Entry>
+</AstroObjectEntry>

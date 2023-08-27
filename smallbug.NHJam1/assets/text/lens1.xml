@@ -1,0 +1,32 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+    <TextBlock>
+        <ID>1</ID>
+        <Text>[89/7432] 10分钟未输入任何命令，锁定系统</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>2</ID>
+        <ParentID>1</ParentID>
+        <Text>[27/9368] 警告：多个节点上检测到碎片，请立即清理以确保正常功能运行，碎片在运行期间将被液化</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>3</ID>
+        <ParentID>2</ParentID>
+        <Text>[COLLAPSED 172669271 重复消息]</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>4</ID>
+        <ParentID>3</ParentID>
+        <Text>[243/672345] 检测到敌人，系统进入自动上电序列</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>5</ID>
+        <ParentID>4</ParentID>
+        <Text>[107/672350] 故障安全协议激活 — 管理员已选定 — 禁用所有休眠舱</Text>
+    </TextBlock>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>lens_malfunctioning_explore</FactID>
+            <Condition>5</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+</NomaiObject>

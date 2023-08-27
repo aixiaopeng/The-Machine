@@ -1,0 +1,39 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>观测记录</NameField>
+
+    <DialogueNode>
+        <Name>Main</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>[夏季? 13/208]</Page>
+            <Page>我不确定如何为这个日期，冰崖没有季节。我想我会继续使用旧的数据格式以保持清晰。</Page>
+            <Page>新实验室终于建好了，我已经把所有的设备都摆放好了，所以我准备开始做实验了！</Page>
+            <Page>我太兴奋了，这个星球真是令人着迷！</Page>
+            <Page>[夏季 15/208]</Page>
+            <Page>正如我所预料的，这种天气完全异常，似乎违反了热力学定律！</Page>
+            <Page>热量似乎凭空产生，没有来源，这与在温暖怀抱星球上热量被消耗的方式相反。</Page>
+            <Page>需要更多研究。</Page>
+            <Page>[夏季 18/208]</Page>
+            <Page>另一个不寻常的事情，这些热量似乎没有从特定的点进入冰崖。</Page>
+            <Page>它并不是从阳光下降下来，也不是从地核上升上来。它就是突然出现在所有地方！</Page>
+            <Page>这解释了为什么冰融化得如此迅速，它均匀地升高温度，直到达到熔点。</Page>
+            <Page>[夏季 23/208]</Page>
+            <Page>我把一个探测器发射到龙卷风中。虽然被摧毁了，但我学到了很多东西！</Page>
+            <Page>高速风是由高度电荷等离子体核心驱动的，就像一个持续不断的闪电！</Page>
+            <Page>我无法理解它们是如何可能的，地表和云层之间的电荷差异不可能如此之大？</Page>
+            <Page>我要开始监测空气中的电荷，我早该想到这一点。</Page>
+            <Page>[夏季 25/208]</Page>
+            <Page>正如我猜测的那样，有一股湍流电荷正在穿过这个星球！</Page>
+            <Page>整个星球都是一个巨大的发电机！</Page>
+            <Page>嗯，大多数星球都是这样，那是熔融金属核心的自然结果，但这个星球的电荷异常高！</Page>
+            <Page>建议在所有太空飞船上装上电磁屏蔽。</Page>
+            <Page>[春季 18/209]</Page>
+            <Page>电荷读数比上个季节更高。需要更多研究以确保这不是异常情况。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>icy_climate_records_explore</FactID>
+            <FactID>icy_climate_records_2_explore</FactID>
+        </RevealFacts>
+    </DialogueNode>
+</DialogueTree>

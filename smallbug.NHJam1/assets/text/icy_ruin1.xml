@@ -1,0 +1,38 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+    <TextBlock>
+        <ID>1</ID>
+        <Text>KASILI: 最终节点已完成！现在我们可以进入项目的下一个阶段了！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>2</ID>
+        <ParentID>1</ParentID>
+        <Text>MAKALU: 做得好，团队的每个人都做得很出色！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>3</ID>
+        <ParentID>1</ParentID>
+        <Text>NELA: 不对！这个节点在充电时会泄漏大量的热和电，这会极大地增加启动时间！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>4</ID>
+        <ParentID>2</ParentID>
+        <Text>SAMATU: 我同意，Makalu，你和你的团队做得太棒了！我会确保向其他项目领导推荐你们！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>5</ID>
+        <ParentID>3</ParentID>
+        <Text>SILANA: 对不起，Nela，但我们必须将我们剩下的资源优先用于按时完成项目。</Text>
+    </TextBlock>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>node_4_explore</FactID>
+            <Condition>1</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>node_heat_explore</FactID>
+            <Condition>4</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+</NomaiObject>

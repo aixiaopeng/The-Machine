@@ -1,0 +1,747 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "name": "Icy Ridges",
+    "starSystem": "smallbug.NHJam1",
+    "Base": {
+        "surfaceGravity": 15,
+        "surfaceSize": 250,
+        "hasMapMarker": true,
+        "invulnerableToSun": true,
+        "ambientLight": 2
+    },
+    "Orbit": {
+        "semiMajorAxis": 14000,
+        "primaryBody": "Daylight",
+        "trueAnomaly": 282,
+        "siderealPeriod": 15,
+        "tint": {
+            "r": 200, "g": 20, "b": 0
+        }
+    },
+    "HeightMap": {
+        "textureMap": "assets/maps/icy_texture.png",
+        "heightMap": "assets/maps/icy_height.png",
+        "minHeight": 200,
+        "maxHeight": 300
+    },
+    "Spawn_DISABLED": {
+        "playerSpawnPoint": {"x": -229.4325, "y": 56.64513, "z": 110.0139},
+        "shipSpawnPoint": {"x": -229.4325, "y": 56.64513, "z": 110.0139},
+        "startWithSuit": true
+    },
+    "ShipLog": {
+        "xmlFile": "assets/shiplogs/icy.xml",
+        "spriteFolder": "assets/photos",
+        "mapMode": {
+            "offset": 0.4,
+            "revealedSprite": "assets/icons/icy.png"
+        }
+    },
+    "Atmosphere": {
+        "atmosphereSunIntensity": 1.6,
+        "useAtmosphereShader": true,
+        "size": 350,
+        "hasOxygen": true,
+        "hasTrees": false,
+        "atmosphereTint": {
+            "r": 50, "g": 60, "b": 145
+        },
+        "fogSize": 360,
+        "fogDensity": 1,
+        "fogTint": {
+            "r": 255, "g": 100, "b": 30
+        },
+        "clouds": {
+            "cloudsPrefab": "giantsDeep",
+            "innerCloudRadius": 330,
+            "outerCloudRadius": 360,
+            "texturePath": "assets/maps/icy_clouds.png",
+            "tint": {
+                "r": 255, "g": 100, "b": 30
+            },
+            "hasLightning": true,
+            "lightningGradient": [
+                {
+                    "time": 0,
+                    "tint": {
+                        "r": 200, "g": 255, "b": 30
+                    }
+                },
+                {
+                    "time": 0.3,
+                    "tint": {
+                        "r": 255, "g": 100, "b": 30
+                    }
+                }
+            ]
+        }
+    },
+    "Water": {
+        "size": 240
+    },
+    "Lava": {
+        "size": 375,
+        "curve": [
+            {
+                "time": 0,
+                "value": 0
+            },
+            {
+                "time": 14.95,
+                "value": 0
+            },
+            {
+                "time": 15.00,
+                "value": 1
+            }
+        ]
+    },
+    "Volumes": {
+        "revealVolumes": [
+            {
+                "position": {"x": 27.92824, "y": -199.5628, "z": -207.7236},
+                "radius": 50,
+                "reveals": ["destroyed_settlement_explore"]
+            }
+        ],
+        "hazardVolumes": [
+            {
+                "radius": 15,
+                "position": {"x": 99.08061, "y": -213.666, "z": -233.1249},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+            {
+                "radius": 15,
+                "position": {"x": 92.08061, "y": -198.666, "z": -213.1249},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+            {
+                "radius": 15,
+                "position": {"x": 83.08061, "y": -187.666, "z": -194.1249},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+
+            {
+                "radius": 15,
+                "position": {"x": -230, "y": 0.3811607, "z": 196},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+            {
+                "radius": 15,
+                "position": {"x": -211, "y": 0.3811607, "z": 180},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+            {
+                "radius": 15,
+                "position": {"x": -191.6915, "y": 0.3811607, "z": 163.2859},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+
+            {
+                "radius": 15,
+                "position": {"x": 60, "y": 292, "z": -78},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+            {
+                "radius": 15,
+                "position": {"x": 55, "y": 268, "z": -72},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+            {
+                "radius": 15,
+                "position": {"x": 49.58992, "y": 243.7014, "z": -65.58776},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+
+            {
+                "radius": 15,
+                "position": {"x": 268, "y": 102, "z": 74},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+            {
+                "radius": 15,
+                "position": {"x": 246, "y": 94, "z": 68},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+            {
+                "radius": 15,
+                "position": {"x": 223.4547, "y": 84.97373, "z": 61.9729},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+
+            {
+                "radius": 15,
+                "position": {"x": -180, "y": -242, "z": -72},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+            {
+                "radius": 15,
+                "position": {"x": -164.6, "y": -222, "z": -67},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            },
+            {
+                "radius": 15,
+                "position": {"x": -149.5843, "y": -202.0806, "z": -61.10131},
+                "type": "electricity",
+                "firstContactDamageType": "electrical",
+                "firstContactDamage": 200
+            }
+        ]
+    },
+    "Props": {
+        "signals": [
+            {
+                "position": {"x": 34.13217, "y": -111.5781, "z": 267.3193},
+                "frequency": "Radio",
+                "audio": "TapeRecorder_LP",
+                "onlyAudibleToScope": false,
+                "name": "Icy Ridges East Radio House"
+            },
+            {
+                "position": {"x": 27.92824, "y": -199.5628, "z": -207.7236},
+                "frequency": "Radio",
+                "audio": "ShipCockpitLandingCamStatic_LP",
+                "onlyAudibleToScope": false,
+                "name": "Icy Ridges West Radio House"
+            }
+        ],
+        "dialogue": [
+            {
+                "position": {
+                    "x": 38.00338,
+                    "y": -109.515694,
+                    "z": 266.0563
+                },
+                "xmlFile": "assets/dialog/tides_settlement_log1.xml"
+            },
+            {
+                "position": {
+                    "x": 32.597908,
+                    "y": -114.246017,
+                    "z": 264.64267
+                },
+                "xmlFile": "assets/dialog/icy_east_settlement_log1.xml"
+            },
+            {
+                "position": {
+                    "x": 2.32592964,
+                    "y": -104.776855,
+                    "z": 267.878876
+                },
+                "xmlFile": "assets/dialog/stoneroller.xml"
+            },
+            {
+                "position": {
+                    "x": 1.30569458,
+                    "y": -106.192719,
+                    "z": 267.884125
+                },
+                "xmlFile": "assets/dialog/gar.xml"
+            },
+            {
+                "position": {
+                    "x": 16.6434021,
+                    "y": -59.812355,
+                    "z": 280.400055
+                },
+                "xmlFile": "assets/dialog/minnow.xml"
+            },
+            {
+                "position": {
+                    "x": -14.1557083,
+                    "y": -122.843781,
+                    "z": 258.435181
+                },
+                "xmlFile": "assets/dialog/dace.xml"
+            },
+            {
+                "position": {
+                    "x": -6.595833,
+                    "y": -127.00589,
+                    "z": 258.566956
+                },
+                "xmlFile": "assets/dialog/carp.xml"
+            },
+            {
+                "position": {
+                    "x": 25.5148487,
+                    "y": -200.419937,
+                    "z": -204.3773
+                },
+                "xmlFile": "assets/dialog/icy_east_settlement_log1.xml"
+            },
+            {
+                "position": {
+                    "x": 54.44561,
+                    "y": -198.876389,
+                    "z": -195.3706
+                },
+                "xmlFile": "assets/dialog/icy_west_settlement_log1.xml"
+            }
+        ],
+        "geysers": [
+            {"position": {"x": 215.7857, "y": -40.98363, "z": 77.10916}},
+
+            {"position": {"x": -204.038, "y": -91.63776, "z": -55.91322}},
+            {"position": {"x": -204.7411, "y": -97.90224, "z": 22.73528}},
+            {"position": {"x": -187.6742, "y": -129.8177, "z": 5.514414}},
+
+            {"position": {"x": -187.1565, "y": -97.62781, "z": 108.0554}},
+            {"position": {"x": -208.8218, "y": -63.20972, "z": 88.92358}},
+
+            {"position": {"x": -111.7163, "y": -25.26379, "z": -207.7899}},
+
+            {"position": {"x": 226.2529, "y": -25.44349, "z": 43.3082}},
+            {"position": {"x": 212.176, "y": -81.16651, "z": 58.36416}},
+            {"position": {"x": 204.6915, "y": -76.32528, "z": 77.45647}},
+
+            {"position": {"x": -117.0086, "y": -134.1483, "z": 147.986}},
+            {"position": {"x": -95.53035, "y": -143.3672, "z": 155.7329}},
+
+            {"position": {"x": -212.1484, "y": -87.28421, "z": 7.849006}},
+            {"position": {"x": -197.4766, "y": -109.035, "z": -49.75602}},
+
+            {"position": {"x": -62.28226, "y": -145.846, "z": -169.4607}}
+        ],
+        "tornados": [
+            {
+                "position": {"x": 83.08061, "y": -187.666, "z": -194.1249},
+                "tint": {
+                    "r": 255, "g": 100, "b": 30
+                },
+                "height": 50,
+                "fluidType": "plasma",
+                "wanderRate": 0
+            },
+            {
+                "position": {"x": -191.6915, "y": 0.3811607, "z": 163.2859},
+                "tint": {
+                    "r": 255, "g": 100, "b": 30
+                },
+                "height": 70,
+                "fluidType": "plasma",
+                "wanderRate": 0
+            },
+            {
+                "position": {"x": 49.58992, "y": 243.7014, "z": -65.58776},
+                "tint": {
+                    "r": 255, "g": 100, "b": 30
+                },
+                "height": 70,
+                "fluidType": "plasma",
+                "wanderRate": 0
+            },
+            {
+                "position": {"x": 223.4547, "y": 84.97373, "z": 61.9729},
+                "tint": {
+                    "r": 255, "g": 100, "b": 30
+                },
+                "height": 70,
+                "fluidType": "plasma",
+                "wanderRate": 0
+            },
+            {
+                "position": {"x": -149.5843, "y": -202.0806, "z": -61.10131},
+                "tint": {
+                    "r": 255, "g": 100, "b": 30
+                },
+                "height": 70,
+                "fluidType": "plasma",
+                "wanderRate": 0
+            }
+        ],
+        "nomaiText": [
+            {
+                "type": "scroll",
+                "position": {"x": -198.4447, "y": 12.96387, "z": 153.6454},
+                "xmlFile": "assets/text/icy_ruin1.xml",
+                "arcInfo": [
+                    {},
+                    {
+                        "position": {
+                            "x": -1, "y": 1
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0, "y": 1
+                        },
+                        "zRotation": 270
+                    },
+                    {
+                        "position": {
+                            "x": -1.7, "y": 2
+                        },
+                        "mirror": true,
+                        "zRotation": 115
+                    },
+                    {
+                        "position": {
+                            "x": 1, "y": 1.2
+                        },
+                        "variation": 1
+                    }
+                ]
+            },
+            {
+                "type": "recorder",
+                "position": {"x": -212.9555, "y": 15.87986, "z": 131.0701},
+                "xmlFile": "assets/text/icy_ruin2.xml"
+            }
+        ],
+        "details": [
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Kids_PreGame/Props_HEA_Radio/",
+                "position": {
+                    "x": 27.73552,
+                    "y": -197.300842,
+                    "z": -205.174347
+                },
+                "rotation": {
+                    "x": 321.397,
+                    "y": 127.755753,
+                    "z": 211.626724
+                }
+            },
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Kids_PreGame/Props_HEA_Radio/",
+                "position": {
+                    "x": 34.15794,
+                    "y": -110.40535,
+                    "z": 264.95282
+                },
+                "rotation": {
+                    "x": 16.1251316,
+                    "y": 269.536346,
+                    "z": 245.740051
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_Treepot",
+                "position": {
+                    "x": -207.731766,
+                    "y": 4.18944931,
+                    "z": 142.698166
+                },
+                "rotation": {
+                    "x": 334.635284,
+                    "y": 202.316315,
+                    "z": 271.7694
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+                "position": {
+                    "x": -208.059662,
+                    "y": 22.653553,
+                    "z": 141.2779
+                },
+                "rotation": {
+                    "x": 77.23774,
+                    "y": 147.401367,
+                    "z": 208.73262
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
+                "position": {
+                    "x": -213.40921,
+                    "y": 13.8182373,
+                    "z": 129.837051
+                },
+                "rotation": {
+                    "x": 331.481781,
+                    "y": 39.1046524,
+                    "z": 93.81714
+                }
+            },
+            {
+                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Geometry_TimeLoopExperiment/ControlledByProxy_Arch/Structure_NOM_TimeLoopExperiment/TLE_Exterior/TLE_Exterior_Geo",
+                "position": {
+                    "x": -188.38945,
+                    "y": 12.8507919,
+                    "z": 132.40918
+                },
+                "rotation": {
+                    "x": 286.888,
+                    "y": 256.567841,
+                    "z": 233.64212
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/Prefab_NOM_Whiteboard (2)",
+                "position": {
+                    "x": -202.617554,
+                    "y": 20.1880417,
+                    "z": 148.591736
+                },
+                "rotation": {
+                    "x": 299.951538,
+                    "y": 8.152008,
+                    "z": 120.39296
+                },
+                "removeChildren": ["ArcSocket/Prefab_NOM_Scroll"]
+            },
+
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": 54.44561,
+                    "y": -198.876389,
+                    "z": -195.3706
+                },
+                "rotation": {
+                    "x": 36.56183,
+                    "y": 33.5674248,
+                    "z": 212.330566
+                }
+            },
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": 25.5148487,
+                    "y": -200.419937,
+                    "z": -204.3773
+                },
+                "rotation": {
+                    "x": 316.2725,
+                    "y": 140.904312,
+                    "z": 202.95134
+                }
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone2/Sector_SlideBurningHouse_Zone2",
+                "position": {
+                    "x": 60.5627556,
+                    "y": -199.668472,
+                    "z": -191.430054
+                },
+                "rotation": {
+                    "x": 314.132751,
+                    "y": 184.433151,
+                    "z": 167.168777
+                },
+                "scale": 0.75
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone1/Structures_Zone1/BrokenLanternHouse_Zone1",
+                "position": {
+                    "x": 86.1685944,
+                    "y": -176.5773,
+                    "z": -205.3203
+                },
+                "rotation": {
+                    "x": 28.469677,
+                    "y": 37.59519,
+                    "z": 225.019714
+                },
+                "scale": 0.75,
+                "removeChildren": ["Props_BrokenLanternHouse_Zone1/Prefab_IP_BROKENLanternItem (1)"]
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone1/Sector_DreamFireHouse_Zone1",
+                "position": {
+                    "x": 27.918396,
+                    "y": -197.575821,
+                    "z": -205.712692
+                },
+                "rotation": {
+                    "x": 319.219147,
+                    "y": 132.641739,
+                    "z": 208.5046
+                },
+                "scale": 0.75
+            },
+            {
+                "position": {"x": 60.36526, "y": -178.3458, "z": -211.5478},
+                "alignToNormal": true,
+                "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Hornfels'GrovePivot/Prefab_HEA_Campfire"
+            },
+
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_UpperVillage/Characters_UpperVillage/Villager_HEA_Moraine",
+                "position": {
+                    "x": -14.1557083,
+                    "y": -122.343781,
+                    "z": 257.435181
+                },
+                "rotation": {
+                    "x": 320.923767,
+                    "y": 283.572083,
+                    "z": 243.970245
+                },
+                "removeChildren": ["ConversationZone"]
+            },
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_UpperVillage/Characters_UpperVillage/Villager_HEA_Arkose_GhostMatter",
+                "position": {
+                    "x": 2.32592964,
+                    "y": -104.276855,
+                    "z": 266.878876
+                },
+                "rotation": {
+                    "x": 12.5646038,
+                    "y": 91.9014359,
+                    "z": 111.280945
+                },
+                "removeChildren": ["ConversationZone"]
+            },
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_UpperVillage/Characters_UpperVillage/Villager_HEA_Tektite",
+                "position": {
+                    "x": 1.30569458,
+                    "y": -105.442719,
+                    "z": 266.384125
+                },
+                "rotation": {
+                    "x": 46.5202446,
+                    "y": 110.603271,
+                    "z": 120.985641
+                },
+                "removeChildren": ["ConversationZone"]
+            },
+            {
+                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_Lakebed/Interactables_Lakebed/Traveller_HEA_Chert",
+                "position": {
+                    "x": 16.6434021,
+                    "y": -59.812355,
+                    "z": 279.400055
+                },
+                "rotation": {
+                    "x": 51.17289,
+                    "y": 237.823425,
+                    "z": 233.895874
+                },
+                "removeChildren": ["ConversationZone"]
+            },
+            {
+                "path": "CaveTwin_Body/Sector_CaveTwin/Geometry_CaveTwin/OtherComponentsGroup/Prefab_HEA_ChertShip",
+                "position": {
+                    "x": 11.1763649,
+                    "y": -54.9888725,
+                    "z": 286.1453
+                },
+                "rotation": {
+                    "x": 37.6288452,
+                    "y": 99.51143,
+                    "z": 112.157875
+                }
+            },
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Villager_HEA_Rutile",
+                "position": {
+                    "x": -6.595833,
+                    "y": -126.50589,
+                    "z": 257.566956
+                },
+                "rotation": {
+                    "x": 306.129456,
+                    "y": 47.4674,
+                    "z": 137.883759
+                },
+                "removeChildren": ["ConversationZone"]
+            },
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": 32.597908,
+                    "y": -114.246017,
+                    "z": 264.64267
+                },
+                "rotation": {
+                    "x": 303.997131,
+                    "y": 57.0973434,
+                    "z": 134.9198
+                }
+            },
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": 38.00338,
+                    "y": -109.515694,
+                    "z": 266.0563
+                },
+                "rotation": {
+                    "x": 24.1257763,
+                    "y": 265.587341,
+                    "z": 244.386169
+                }
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone2/Sector_MapHouse_Zone2/Geo_MapHouse_Zone2/MapHouse",
+                "position": {
+                    "x": -5.470886,
+                    "y": -97.8634338,
+                    "z": 269.395538
+                },
+                "rotation": {
+                    "x": 291.5327,
+                    "y": 335.762268,
+                    "z": 201.664719
+                },
+                "scale": 0.75
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone2/Sector_MapHouse_Zone2/Geo_MapHouse_Zone2/MapHouse",
+                "position": {
+                    "x": -3.76145554,
+                    "y": -129.1941,
+                    "z": 256.299377
+                },
+                "rotation": {
+                    "x": 62.8509521,
+                    "y": 197.7293,
+                    "z": 196.566269
+                },
+                "scale": 0.75
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone1/Sector_DreamFireHouse_Zone1",
+                "position": {
+                    "x": 34.147644,
+                    "y": -110.56398,
+                    "z": 265.3232
+                },
+                "rotation": {
+                    "x": 13.84084,
+                    "y": 270.5952,
+                    "z": 246.013885
+                },
+                "scale": 0.75
+            },
+            {
+                "position": {"x": -1.736557, "y": -113.0933, "z": 263.0859},
+                "alignToNormal": true,
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire"
+            }
+        ]
+    }
+}

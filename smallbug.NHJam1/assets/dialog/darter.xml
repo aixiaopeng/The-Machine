@@ -1,0 +1,47 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Darter</NameField>
+
+   <DialogueNode>
+    <Name>Start</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+        <Page>嘿，您要来拯救我们吗？</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+        <DialogueOption>
+            <Text>这有点夸张，我们只是面临住房短缺问题！</Text>
+            <DialogueTarget>Housing</DialogueTarget>
+        </DialogueOption>
+        <DialogueOption>
+            <Text>当然！Outer Wilds Rescue会帮助您！</Text>
+            <DialogueTarget>Yes</DialogueTarget>
+        </DialogueOption>
+        <DialogueOption>
+            <Text>我会尽力的。</Text>
+            <DialogueTarget>Maybe</DialogueTarget>
+        </DialogueOption>
+    </DialogueOptionsList>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>Housing</Name>
+    <Dialogue>
+        <Page>我面临住房短缺问题，我的房子太小了！我讨厌一直这么拥挤！</Page>
+    </Dialogue>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>Yes</Name>
+    <Dialogue>
+        <Page>很好，我父母说Outer Wilds Rescue可以解决我们所有的问题！</Page>
+    </Dialogue>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>Maybe</Name>
+    <Dialogue>
+        <Page>您最好这样做！我厌倦了一直这么拥挤！</Page>
+    </Dialogue>
+</DialogueNode>
+</DialogueTree>

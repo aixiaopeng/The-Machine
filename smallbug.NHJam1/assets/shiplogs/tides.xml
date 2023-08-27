@@ -1,0 +1,78 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>tides</ID>
+
+    <Entry>
+        <ID>tides_settlement</ID>
+        <Name>岛屿定居点</Name>
+        <Curiosity>逃脱</Curiosity>
+        
+        <RumorFact>
+            <ID>new_base_rumor</ID>
+            <SourceID>north_village</SourceID>
+            <Text>Sunfish说他们和Salmon正在打包Outer Wilds救援基地，并搬到Ravenous Tides。</Text>
+        </RumorFact>
+        
+        <ExploreFact>
+            <ID>new_base_explore</ID>
+            <Text>Outer Wilds Rescue正在搬入定居点中的一个住所，因为没有已知的适合建造专用基地的好地点。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>cramped_explore</ID>
+            <Text>这个定居点变得非常拥挤，但在这个星球上没有其他已发现的地方可以建造新的定居点。</Text>
+        </ExploreFact>
+    </Entry>
+    
+    <Entry>
+        <ID>tides_ruin</ID>
+        <Name>第三个节点</Name>
+        <Curiosity>机器</Curiosity>
+        
+        <RumorFact>
+            <ID>tides_ruin_rumor</ID>
+            <SourceID>tides_settlement</SourceID>
+            <RumorName>先驱者废墟</RumorName>
+            <Text>Bass说海底有一个先驱者废墟。</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>node_3_explore</ID>
+            <Text>先驱者建造了一个叫做“第三个节点”的东西，其中涉及一个口袋维度。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>revenge_explore</ID>
+            <Text>先驱者想通过摧毁“他们”来报仇。</Text>
+        </ExploreFact>
+    </Entry>
+
+    <Entry>
+        <ID>tides_ghost_ruin</ID>
+        <Name>遥控器</Name>
+        <Curiosity>战争</Curiosity>
+        <AltPhotoCondition>weapon_complete_explore</AltPhotoCondition>
+
+        <RumorFact>
+            <ID>tides_ghost_ruin_rumor</ID>
+            <SourceID>tides_settlement</SourceID>
+            <RumorName>奇怪的先驱者废墟</RumorName>
+            <Text>Bass说海底有一个先驱者废墟，正在泄漏奇怪的能量。</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>tides_ghost_ruin_explore</ID>
+            <Text>我发现了一个先驱者废墟，其中有一种信标，但周围环绕着奇怪和危险的能量。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>weapon_complete_explore</ID>
+            <Text>先驱者在巨大的代价下完成了武器的建造。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>disappear_explore</ID>
+            <Text>武器完成不久后，家园系统的无线电信号中断了。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>close_to_ansible</ID>
+            <Text>在信标浸入水中时，无法识别出其发出的信号。确认它可能会是一项自杀式任务......</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

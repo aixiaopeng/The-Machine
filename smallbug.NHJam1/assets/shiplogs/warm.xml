@@ -1,0 +1,66 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>warm</ID>
+
+    <Entry>
+        <ID>north_village</ID>
+        <Name>北方村庄</Name>
+        <Curiosity>逃脱</Curiosity>
+
+        <ExploreFact>
+            <ID>north_village_explore</ID>
+            <Text>这是我完成培训的地方。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>ice_age_explore</ID>
+            <Text>这颗星球曾经是茂盛的，但现在已经被冰河时代所覆盖。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>space_program_explore</ID>
+            <Text>为了逃离冰河时代，人们发起了临时太空计划，前往更适合居住的星球。</Text>
+        </ExploreFact>
+    </Entry>
+
+    <Entry>
+        <ID>south_village</ID>
+        <Name>南方村庄</Name>
+        <Curiosity>逃脱</Curiosity>
+
+        <RumorFact>
+            <ID>climate_records_rumor</ID>
+            <SourceID>north_village</SourceID>
+            <Text>Sunfish说南方村庄可能会有更多关于冰河时代开始的信息。</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>climate_records_explore</ID>
+            <Text>冰河时代开始之前，整个星球突然发生了一次地震，然后热量开始似乎从存在中被抹除，违反了物理定律。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>astro_records_explore</ID>
+            <Text>在两年多的时间里，冰岭从一个冰冷的行星变成了拥有液态水和浓密不透明大气层的行星。</Text>
+        </ExploreFact>
+    </Entry>
+
+    <Entry>
+        <ID>warm_ruin</ID>
+        <Name>第二个节点</Name>
+        <Curiosity>机器</Curiosity>
+
+        <RumorFact>
+            <ID>warm_ruin_rumor</ID>
+            <SourceID>north_village</SourceID>
+            <RumorName>先驱者废墟</RumorName>
+            <Text>在这颗星球上有一个先驱者废墟。</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>node_2_explore</ID>
+            <Text>先驱者建造了他们称之为“第二个节点”的东西，为某个装置提供稳定性。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>precursors_do_not_belong_explore</ID>
+            <Text>先驱者提到他们远离了自己的家园系统。</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

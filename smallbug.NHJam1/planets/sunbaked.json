@@ -1,0 +1,365 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "name": "Sunbaked Stone",
+    "starSystem": "smallbug.NHJam1",
+    "Base": {
+        "surfaceGravity": 8,
+        "surfaceSize": 120,
+        "hasMapMarker": true,
+        "invulnerableToSun": true
+    },
+    "Orbit": {
+        "semiMajorAxis": 4000,
+        "primaryBody": "Daylight",
+        "isTidallyLocked": true,
+        "trueAnomaly": 13,
+        "tint": {
+            "r": 255, "g": 100, "b": 0
+        }
+    },
+    "HeightMap": {
+        "heightMap": "assets/maps/sunbaked_height.png",
+        "textureMap": "assets/maps/sunbaked_texture.png",
+        "minHeight": 80,
+        "maxHeight": 140
+    },
+    "Spawn_DISABLED": {
+        "playerSpawnPoint": {"x": 18.63803, "y": 105.2725, "z": -27.05114},
+        "shipSpawnPoint": {"x": 18.63803, "y": 105.2725, "z": -27.05114},
+        "startWithSuit": true
+    },
+    "ShipLog": {
+        "xmlFile": "assets/shiplogs/sunbaked.xml",
+        "spriteFolder": "assets/photos",
+        "mapMode": {
+            "offset": 0.4,
+            "revealedSprite": "assets/icons/sunbaked.png"
+        }
+    },
+    "Lava": {
+        "size": 150,
+        "curve": [
+            {
+                "time": 0,
+                "value": 0
+            },
+            {
+                "time": 14.95,
+                "value": 0
+            },
+            {
+                "time": 15.00,
+                "value": 1
+            }
+        ]
+    },
+    "Volumes": {
+        "oxygenVolumes": [
+            {
+                "position": {"x": -2.031462, "y": -89.56004, "z": -2.243336},
+                "playRefillAudio": true,
+                "treeVolume": true,
+                "radius": 50
+            }
+        ]
+    },
+    "Props": {
+        "singularities": [
+            {
+                "type": "blackHole",
+                "targetStarSystem": "smallbug.NHJam1_core",
+                "size": 3,
+                "horizonRadius": 3,
+                "position": {"x": -1.656747, "y": -94, "z": -1.964563},
+                "curve": [
+                    {
+                        "time": 0,
+                        "value": 0
+                    },
+                    {
+                        "time": 14.70,
+                        "value": 0
+                    },
+                    {
+                        "time": 14.78,
+                        "value": 1
+                    }
+                ]
+            }
+        ],
+        "nomaiText": [
+            {
+                "type": "scroll",
+                "position": {"x": 9.213358, "y": 107.8905, "z": 19.89021},
+                "xmlFile": "assets/text/sunbaked_ruin1.xml",
+                "arcInfo": [
+                    {},
+                    {
+                        "position": {
+                            "x": -0.8, "y": 0.8
+                        },
+                        "mirror": true,
+                        "zRotation": 45
+                    },
+                    {
+                        "position": {
+                            "x": 0, "y": 1.1
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.6, "y": 1.7
+                        },
+                        "zRotation": 270
+                    }
+                ]
+            },
+            {
+                "type": "scroll",
+                "position": {"x": -8.865891, "y": 109.365, "z": -3.528057},
+                "xmlFile": "assets/text/sunbaked_ruin2.xml",
+                "arcInfo": [
+                    {},
+                    {
+                        "position": {
+                            "x": -0.8, "y": 1
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0, "y": 1
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": -1.5, "y": 2
+                        },
+                        "mirror": true,
+                        "zRotation": 90,
+                        "variation": 1
+                    },
+                    {
+                        "position": {
+                            "x": 0.5, "y": 1.8
+                        },
+                        "zRotation": 270
+                    }
+                ]
+            }
+        ],
+        "dialogue": [
+            {
+                "position": {"x": -1.656747, "y": -90, "z": -1.964563},
+                "xmlFile": "assets/dialog/precursors.xml",
+                "radius": 3
+            }
+        ],
+        "details": [
+            {
+                "position": {"x": -1.656747, "y": -89.56913, "z": -1.964563},
+                "alignToNormal": true,
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire"
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
+                "position": {
+                    "x": 9.455484,
+                    "y": 108.106552,
+                    "z": 17.4399128
+                },
+                "rotation": {
+                    "x": 20.5750465,
+                    "y": 334.01,
+                    "z": 342.1001
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_Treepot",
+                "position": {
+                    "x": 8.080593,
+                    "y": 109.01531,
+                    "z": -7.59886
+                },
+                "rotation": {
+                    "x": 24.74512,
+                    "y": 164.307938,
+                    "z": 12.0308971
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
+                "position": {
+                    "x": -7.15214157,
+                    "y": 109.434311,
+                    "z": -1.60529172
+                },
+                "rotation": {
+                    "x": 22.0380344,
+                    "y": 232.788208,
+                    "z": 11.8054018
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+                "position": {
+                    "x": -5.9423275,
+                    "y": 108.839561,
+                    "z": 13.1451235
+                },
+                "rotation": {
+                    "x": 18.72169,
+                    "y": 313.20694,
+                    "z": 357.4785
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/Prefab_NOM_Whiteboard (2)",
+                "position": {
+                    "x": 21.9690113,
+                    "y": 107.7834,
+                    "z": -0.9396572
+                },
+                "rotation": {
+                    "x": 10.8877525,
+                    "y": 109.893478,
+                    "z": 3.910169
+                },
+                "removeChildren": ["ArcSocket/Prefab_NOM_Scroll"]
+            },
+            {
+                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Geometry_TimeLoopExperiment/ControlledByProxy_Arch/Structure_NOM_TimeLoopExperiment/TLE_Exterior/TLE_Exterior_Geo",
+                "position": {
+                    "x": 3.94223261,
+                    "y": 79.29752,
+                    "z": 6.46091843
+                },
+                "rotation": {
+                    "x": 352.834656,
+                    "y": 246.9766,
+                    "z": 2.53996
+                },
+                "scale": 0.75,
+                "keepLoaded": true
+            },
+
+            {
+                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+                "position": {
+                    "x": 0.3619,
+                    "y": -89.3724,
+                    "z": -5.689
+                },
+                "rotation": {
+                    "x": 359.613922,
+                    "y": 325.8391,
+                    "z": 180.261978
+                }
+            },
+            {
+                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+                "position": {
+                    "x": -4.7805,
+                    "y": -89.5256,
+                    "z": -4.8637
+                },
+                "rotation": {
+                    "x": 358.31955,
+                    "y": 35.5979462,
+                    "z": 187.8413
+                }
+            },
+            {
+                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+                "position": {
+                    "x": -5.5159,
+                    "y": -89.7283,
+                    "z": -0.0645
+                },
+                "rotation": {
+                    "x": 348.946442,
+                    "y": 114.926224,
+                    "z": 186.403244
+                }
+            },
+            {
+                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+                "position": {
+                    "x": -1.485,
+                    "y": -89.6578,
+                    "z": 2.1727
+                },
+                "rotation": {
+                    "x": 356.489166,
+                    "y": 171.316116,
+                    "z": 182.144775
+                }
+            },
+            {
+                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+                "position": {
+                    "x": 2.2145,
+                    "y": -89.6676,
+                    "z": -0.8971
+                },
+                "rotation": {
+                    "x": 0.7108937,
+                    "y": 265.376556,
+                    "z": 169.230957
+                }
+            },
+
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_NomaiTree_Var_1",
+                "position": {"x": 21.91403, "y": -92.68791, "z": 4.951691}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_NomaiTree_Var_2",
+                "position": {"x": 2.105322, "y": -90.1472, "z": -20.14236}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_NomaiTree_Var_2",
+                "position": {"x": -21.02906, "y": -90.89732, "z": -11.53309}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_NomaiTree_Var_1",
+                "position": {"x": -15.58741, "y": -92.17636, "z": 15.21897}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_NomaiTree_Var_1",
+                "position": {"x": 5.496571, "y": -92.49817, "z": 20.02495}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_NomaiTree_Var_1",
+                "position": {"x": -7.703493, "y": -90.74099, "z": -25.90897}
+            },
+
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+                "position": {"x": 13.47096, "y": -90.70811, "z": -12.95835}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+                "position": {"x": -15.41625, "y": -90.46936, "z": -17.79236}
+            },
+
+            {
+                "alignToNormal": true,
+                "path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_Box",
+                "position": {"x": -16.70358, "y": -90.68607, "z": -15.40315}
+            },
+            {
+                "alignToNormal": true,
+                "path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_Box",
+                "position": {"x": 7.285336, "y": -91.201, "z": 12.00707}
+            }
+        ]
+    }
+}

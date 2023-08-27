@@ -1,0 +1,32 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>core</ID>
+
+    <Entry>
+        <ID>core_entry</ID>
+        <Name>核心</Name>
+        <Curiosity>机器</Curiosity>
+        <IsCuriosity/>
+
+        <RumorFact>
+            <ID>core_precursors_deactivate_rumor</ID>
+            <SourceID>precursors</SourceID>
+            <Text>幸存的先驱者称，在核心的北极有一台计算机终端，可以关闭武器。</Text>
+        </RumorFact>
+        <RumorFact>
+            <ID>core_precursors_access_rumor</ID>
+            <SourceID>precursors</SourceID>
+            <Text>幸存的先驱者称，进入核心可以使用访问舱口。</Text>
+        </RumorFact>
+        <RumorFact>
+            <ID>core_lens_recording_rumor</ID>
+            <SourceID>lens_recording</SourceID>
+            <Text>在从先驱者的家星系那里只得到无线电静默后，先驱者决定进入核心进行冷冻休眠。</Text>
+        </RumorFact>
+        <RumorFact>
+            <ID>core_access_hatch_rumor</ID>
+            <SourceID>access_hatch</SourceID>
+            <Text>访问舱口显然通往一个被称为“核心”的地方，为了防止“他们”的攻击，这个地方需要被很好地加固。</Text>
+        </RumorFact>
+    </Entry>
+</AstroObjectEntry>

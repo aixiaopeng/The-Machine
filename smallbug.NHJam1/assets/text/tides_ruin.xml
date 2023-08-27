@@ -1,0 +1,33 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+    <TextBlock>
+        <ID>1</ID>
+        <Text>SILANA: 第三节点，完成！团队正在取得一些严重的进展！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>2</ID>
+        <ParentID>1</ParentID>
+        <Text>KASILI: 那个袖珍维度真是不同寻常！学校可没教你如何建造那种东西！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>3</ID>
+        <ParentID>1</ParentID>
+        <Text>NELA: 离我们最终复仇和永远摧毁他们的目标又近了一步！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>4</ID>
+        <ParentID>3</ParentID>
+        <Text>MAKALU: Nela，你对暴力的热情让我感到担忧。</Text>
+    </TextBlock>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>node_3_explore</FactID>
+            <Condition>2</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>revenge_explore</FactID>
+            <Condition>3</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+</NomaiObject>

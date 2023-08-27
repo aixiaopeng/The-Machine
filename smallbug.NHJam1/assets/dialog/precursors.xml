@@ -1,0 +1,139 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Precursors</NameField>
+
+    <DialogueNode>
+        <Name>Start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>???: 你好，生物。</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>你是谁？</Text>
+                <DialogueTarget>Who</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <RequiredLogCondition>lens_recording_explore</RequiredLogCondition>
+                <Text>你们其他人在哪里？</Text>
+                <DialogueTarget>Rest</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <RequiredLogCondition>lens_recording_explore</RequiredLogCondition>
+                <Text>你们的家族星系发生了什么？</Text>
+                <DialogueTarget>Home System</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <RequiredLogCondition>lens_malfunctioning_explore</RequiredLogCondition>
+                <Text>什么是备用系统？</Text>
+                <DialogueTarget>Failsafe</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <RequiredCondition>Failsafe Complete</RequiredCondition>
+                <Text>我如何停用这个武器？</Text>
+                <DialogueTarget>Deactivate</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <RequiredCondition>Deactivate Complete</RequiredCondition>
+                <Text>我如何进入核心？</Text>
+                <DialogueTarget>Core</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>再见</Text>
+                <DialogueTarget>Exit</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Who</Name>
+        <Dialogue>
+            <Page>???: 等你知道了这一切再回来。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>living_explore</FactID>
+        </RevealFacts>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Rest</Name>
+        <Dialogue>
+            <Page>SAMATU: 已经过去了成千上万年，冷冻仓无法让我们全部活下来。</Page>
+            <Page>MILA: 它们从来没有被设计来维持那么久，能有人活下来真是幸运。</Page>
+            <Page>SAMATU: 我深感遗憾，我们失去的那些人……</Page>
+            <Page>KASILI: Nela、Silana、Kata、Oli。</Page>
+            <Page>MILA: 我亲爱的 Kata……</Page>
+            <Page>SAMATU: 我总是不能不责怪自己提出这个想法。</Page>
+            <Page>MAKALU: 我们都是一起做出的决定，这不是你的责任，Samatu。我们知道我们当初要做什么。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>living_rest_explore</FactID>
+        </RevealFacts>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Home System</Name>
+        <Dialogue>
+            <Page>SAMATU: 我们不知道，我们再也没有从他们那里收到过通讯。</Page>
+            <Page>KASILI: 内战、经济崩溃、自然灾害，不可能知道。</Page>
+            <Page>TENAKA: 没关系，已经过去了成千上万年，他们早已死去。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>living_home_explore</FactID>
+        </RevealFacts>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Failsafe</Name>
+        <Dialogue>
+            <Page>KASILI: 你就是备用系统。</Page>
+            <Page>MAKALU: 备用系统是一个在武器发射前自动激活的系统，以确保武器不会被意外使用或被错误的人使用。</Page>
+            <Page>MAKALU: 它指定一个人作为“管理员”，只有管理员才能停用武器。</Page>
+            <Page>MAKALU: 它还为管理员提供有限的未来预测能力，大约能提前 15 分钟。</Page>
+            <Page>SAMATU: 我被指定为管理员，但因为在武器被激活时我正在冷冻休眠中，系统随机选择了其他人。</Page>
+            <Page>TEKANA: 看起来它选择了你，奇怪的生物。</Page>
+            <Page>KASILI: 我们从未想过在节点上会发展出生命，但很幸运它发生了，否则我们将没有人来阻止我们的武器。</Page>
+        </Dialogue>
+        <SetCondition>Failsafe Complete</SetCondition>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Deactivate</Name>
+        <Dialogue>
+            <Page>TEKANA: 只需进入这颗恒星的核心，与北极的计算机终端连接。</Page>
+            <Page>MILA: 它会自动检测到你是管理员。</Page>
+            <Page>KASILI: 做我们多年前应该做的事情。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>core_precursors_deactivate_rumor</FactID>
+        </RevealFacts>
+        <SetCondition>Deactivate Complete</SetCondition>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Core</Name>
+        <Dialogue>
+            <Page>TEKANA: 使用通道。</Page>
+            <Page>SAMATU: 它被放置在没有人敢去看的地方……正好在光束的路径中。</Page>
+            <Page>SAMATU: 就在武器激活前的最后时刻。</Page>
+            <Page>MILA: 你只有几秒钟。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>hatch_core_rumor</FactID>
+            <FactID>hatch_enter_explore</FactID>
+            <FactID>core_precursors_access_rumor</FactID>
+        </RevealFacts>
+        <SetCondition>Core Finished</SetCondition>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Exit</Name>
+        <Dialogue>
+            <Page>???: 祝你好运，生物。</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

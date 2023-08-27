@@ -1,0 +1,23 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Radio Transmission Recording</NameField>
+
+    <DialogueNode>
+        <Name>Main</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>IRE: 这里是 Icy Ridges 东部定居点，Ravenous Tides 定居点，你能听到吗？</Page>
+            <Page>RT: 我们能清楚地听到你，Icy Ridges 东部定居点！</Page>
+            <Page>IRE: 西部定居点发生了紧急情况，一股龙卷风正好触地，位于定居点的中心！</Page>
+            <Page>IRE: 我们派遣了 Minnow 和一个救援队前去协助撤离，但我们确实需要额外的帮助！</Page>
+            <Page>RT: 损坏程度如何？</Page>
+            <Page>IRE: 极严重，有多个大火，天气条件使得着陆非常困难！</Page>
+            <Page>RT: 我们派遣 Bass 和一个救援队去协助救援，Sunfish 和他们的飞船将保持在附近待命。</Page>
+            <Page>RT: 如果情况有变，请保持与我们联系，Icy Ridges 东部定居点。Ravenous Tides 定居点，收到，完毕。</Page>
+            <Page>IRE: 感谢你们的帮助，Ravenous Tides 定居点。Icy Ridges 东部定居点，完毕。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>aided_rumor</FactID>
+        </RevealFacts>
+    </DialogueNode>
+</DialogueTree>

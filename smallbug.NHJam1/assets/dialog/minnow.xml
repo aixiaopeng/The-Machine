@@ -1,0 +1,76 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Minnow</NameField>
+
+    <DialogueNode>
+        <Name>Start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>新兵，你好！很高兴看到你走到了这一步！</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>这附近有什么可以探索的吗？</Text>
+                <DialogueTarget>Explore</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>在这里居住是如何可能的？</Text>
+                <DialogueTarget>Live</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>那些闪电有多危险？</Text>
+                <DialogueTarget>Lightning</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>再见</Text>
+                <DialogueTarget>Exit</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Explore</Name>
+        <Dialogue>
+            <Page>附近有一个前辈遗迹，你可以去看看，这个星系中的每颗行星似乎都至少有一个。</Page>
+            <Page>但我不明白的是，它是建在基岩上的。这意味着在这个星球变暖之前，它被埋在了数百英尺的冰和水下！</Page>
+            <Page>我不明白这怎么可能！前辈遗迹一定非常古老。</Page>
+            <Page>你还可以参观西部定居点，但我建议小心，那个地方非常危险，有点阴森。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>icy_ruin_rumor</FactID>
+        </RevealFacts>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Live</Name>
+        <Dialogue>
+            <Page>我知道对吧？这个地方竟然如此适合居住！</Page>
+            <Page>不断神秘地产生的热量使这个地方保持了一个适合居住的温度，尽管有点温暖。</Page>
+            <Page>而且这种热量融化了和蒸发了冰，形成了呼吸的大气层！</Page>
+            <Page>这个星球上没有本地生物，但我们在湖泊中引入了藻类作为食物来源。</Page>
+            <Page>虽然让我有点紧张，如果热量消失了，或者变得更热怎么办？</Page>
+            <Page>但是嘿，我们需要一个地方住嘛！</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Lightning</Name>
+        <Dialogue>
+            <Page>闪电？一点儿都不危险，它只会在云层间跳跃。</Page>
+            <Page>不过龙卷风非常危险，比普通龙卷风还要危险。</Page>
+            <Page>它们有一个电离等离子体的核心，会把你烧焦！</Page>
+            <Page>不过它们只在低海拔地区形成。</Page>
+            <Page>...好吧，以前是这样。</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Exit</Name>
+        <Dialogue>
+            <Page>出去时要保重，新兵。</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

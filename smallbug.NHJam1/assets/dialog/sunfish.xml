@@ -1,0 +1,89 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Sunfish</NameField>
+
+    <DialogueNode>
+        <Name>Start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>...</Page>
+            <Page>哦，嘿！抱歉，我没有看到你在那里，新兵。</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>我刚刚完成了训练！</Text>
+                <DialogueTarget>Training</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>这附近有什么可以探索的吗？</Text>
+                <DialogueTarget>Explore</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>我们还能坚持多久？</Text>
+                <DialogueTarget>Survive</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>有什么建议吗？</Text>
+                <DialogueTarget>Advice</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>再见</Text>
+                <DialogueTarget>Exit</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Training</Name>
+        <Dialogue>
+            <Page>等等，你刚刚完成了训练？然后 Salmon 就给你了第一个任务？</Page>
+            <Page>该死，我竟然忘记了！真对不起！</Page>
+            <Page>我在考虑我们怎样可以进一步提高燃料效率，通过从反应堆重新路由多余的能量，超频燃料泵，以减少燃料在燃料线中的积聚...</Page>
+            <Page>抱歉，我又分神了。</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Explore</Name>
+        <Dialogue>
+            <Page>如果你想了解关于冰河时代的信息，附近有一些记录可以详细说明它的开始。</Page>
+            <Page>South Village 可能有更多信息，我知道他们对气候进行了更密切的监测。</Page>
+            <Page>还有一座前辈遗址，你可以去看看，也许他们经历过类似的事情？</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>climate_records_rumor</FactID>
+            <FactID>warm_ruin_rumor</FactID>
+        </RevealFacts>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Survive</Name>
+        <Dialogue>
+            <Page>恐怕不会再坚持多久了。</Page>
+            <Page>不知何故，温度还在持续下降。很快，在没有全套太空服的情况下，在室外生存几分钟都不可能。</Page>
+            <Page>我们已经开始收拾一切，所以我和 Salmon 是这里唯一的人。</Page>
+            <Page>从现在起，新兵将在 Ravenous Tides 接受训练。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>new_base_rumor</FactID>
+        </RevealFacts>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Advice</Name>
+        <Dialogue>
+            <Page>寻找无线电信号塔。你可以很容易地接收到它们的信号，它们是寻找定居点的相当好的方法。</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Exit</Name>
+        <Dialogue>
+            <Page>一路平安！</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

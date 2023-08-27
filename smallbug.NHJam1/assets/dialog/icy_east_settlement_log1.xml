@@ -1,0 +1,22 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>无线电传输记录</NameField>
+
+    <DialogueNode>
+        <Name>Main</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>IRW: 这里是冰崖……有人能回应吗？我重复一遍，这里是冰崖西部定居点，有人……应吗？！</Page>
+            <Page>IRW: 我们正处于紧急情况，有人……应吗！？</Page>
+            <Page>IRE: 这里是冰崖东部定居点，我们收到你的讯号，但似乎有一些干扰。</Page>
+            <Page>IRW: 我们遇到了紧急情况，一股龙卷风登陆在定居点！我重复，一股龙卷风登陆在定居点！</Page>
+            <Page>IRW: 那里有大面积的火灾，我们有多人受伤，紧急，大面积火灾，有多人受伤！</Page>
+            <Page>IRE: 明白，冰崖东部定居点，我们会派遣“Minnow”和一个救援队前来协助撤离！</Page>
+            <Page>IRE: 如有情况变化，请回应，我们将与“饥饿潮汐”定居点的“Outer Wilds救援队”联系。冰崖东部定居点，收音结束。</Page>
+            <Page>IRW: 明白，冰崖西部定居点，收音结束。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>tornadoed_settlement_rumor</FactID>
+        </RevealFacts>
+    </DialogueNode>
+</DialogueTree>

@@ -1,0 +1,94 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+    "enableTimeLoop": true,
+    "loopDuration": 15,
+    "startHere": true,
+    "initialReveal": ["north_village_explore"],
+    "curiosities": [
+        {
+            "id": "machine",
+            "color": {"r": 220, "g": 101, "b": 64, "a": 255},
+            "highlightColor": {"r": 255, "g": 141, "b": 74, "a": 255}
+        },
+        {
+            "id": "war",
+            "color": {"r": 115, "g": 50, "b": 211, "a": 255},
+            "highlightColor": {"r": 160, "g": 25, "b": 230, "a": 255}
+        },
+        {
+            "id": "escape",
+            "color": {"r": 20, "g": 199, "b": 222, "a": 255},
+            "highlightColor": {"r": 157, "g": 187, "b": 216, "a": 255}
+        }
+    ],
+    "entryPositions": [
+        {
+            "id": "north_village",
+            "position": {"x": 0, "y": 0}
+        },
+        {
+            "id": "south_village",
+            "position": {"x": -400, "y": 0}
+        },
+        {
+            "id": "tides_settlement",
+            "position": {"x": 0, "y": -400}
+        },
+        {
+            "id": "destroyed_settlement",
+            "position": {"x": 400, "y": 0}
+        },
+        {
+            "id": "icy_settlement",
+            "position": {"x": 400, "y": -400}
+        },
+        {
+            "id": "sunbaked_ruin",
+            "position": {"x": -800, "y": -800}
+        },
+        {
+            "id": "warm_ruin",
+            "position": {"x": -400, "y": -800}
+        },
+        {
+            "id": "tides_ghost_ruin",
+            "position": {"x": 0, "y": -800}
+        },
+        {
+            "id": "tides_ruin",
+            "position": {"x": 400, "y": -800}
+        },
+        {
+            "id": "icy_ruin",
+            "position": {"x": 800, "y": -800}
+        },
+        {
+            "id": "icy_ruin_2",
+            "position": {"x": 800, "y": -900}
+        },
+        {
+            "id": "access_hatch",
+            "position": {"x": -800, "y": -1200}
+        },
+        {
+            "id": "precursors",
+            "position": {"x": -400, "y": -1200}
+        },
+        {
+            "id": "lens_main",
+            "position": {"x": 0, "y": -1200}
+        },
+        {
+            "id": "lens_recording",
+            "position": {"x": -50, "y": -1300}
+        },
+        {
+            "id": "lens_computer",
+            "position": {"x": 50, "y": -1300}
+        },
+        {
+            "id": "core_entry",
+            "position": {"x": 0, "y": -1600}
+        }
+    ]
+}

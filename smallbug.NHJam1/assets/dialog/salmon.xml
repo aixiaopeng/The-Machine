@@ -1,0 +1,138 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Salmon</NameField>
+
+    <DialogueNode>
+        <Name>Start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>早上好，新兵！你睡得怎么样？</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>很好，我期待能够有所作为！</Text>
+                <DialogueTarget>Good Sleep</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>还行，我有点紧张。</Text>
+                <DialogueTarget>Ok Sleep</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>不太好，这里实在太冷了……</Text>
+                <DialogueTarget>Bad Sleep</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Good Sleep</Name>
+        <Dialogue>
+            <Page>很高兴听到这个！我们总是很高兴多一个帮手。</Page>
+        </Dialogue>
+        <DialogueTarget>Mission</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Ok Sleep</Name>
+        <Dialogue>
+            <Page>我理解，这将是一项具有挑战性甚至危险的工作，但我相信你会做得很好。我们很高兴你能加入我们！</Page>
+        </Dialogue>
+        <DialogueTarget>Mission</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Bad Sleep</Name>
+        <Dialogue>
+            <Page>老实说，我也是。这里还在变得更冷，但我们还没有准备好迁移我们的行动基地。谢谢你的到来。</Page>
+        </Dialogue>
+        <DialogueTarget>Mission</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Mission</Name>
+        <Dialogue>
+            <Page>现在你已经完成了培训，我们想欢迎你加入“外部星际救援”！</Page>
+            <Page>我们有一项重要的任务要交给你……</Page>
+            <Page>撤离已经完成，所有新的定居点都至少有些自给自足，但正如你所知，条件并不理想。</Page>
+            <Page>环境条件使得生活变得困难，每个人都挤在我们几个小定居点里，而且由于冰脊上的一个定居点被摧毁，我们现在都承受着压力。</Page>
+            <Page>所以我们需要你作为侦察员，寻找更适合的定居点。你可以自由地在太阳系的任何地方进行调查，只要看起来有希望。</Page>
+            <Page>你的飞船的范围和速度都非常出色——我想这是我们迄今为止最好的作品——所以它应该能够到达太阳系的任何地方。</Page>
+            <Page>你计划首先去哪里探索呢？</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>我会再去狂风潮汐看一下。</Text>
+                <DialogueTarget>Tides</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>我想我会先在这里探索一下。</Text>
+                <DialogueTarget>Warm</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>我想了解一下在冰脊发生了什么。</Text>
+                <DialogueTarget>Icy</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>我想调查一下日曬石。</Text>
+                <DialogueTarget>Sunbaked</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>我还不确定……</Text>
+                <DialogueTarget>IDK</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+        <RevealFacts>
+            <FactID>destroyed_settlement_rumor</FactID>
+        </RevealFacts>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Tides</Name>
+        <Dialogue>
+            <Page>好主意！我们最成功的定居点在狂风潮汐上，可能还有一些被忽视的有希望的地方。</Page>
+        </Dialogue>
+        <DialogueTarget>Exit</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Warm</Name>
+        <Dialogue>
+            <Page>聪明的选择。这里可能有证据可以指向这次冰河时期的原因。只是不要忘记你的任务！</Page>
+        </Dialogue>
+        <DialogueTarget>Exit</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Icy</Name>
+        <Dialogue>
+            <Page>我们都是如此，多么可怕的灾难。如果我们能够了解为什么会发生这种情况，也许冰脊对于未来的定居点来说会更安全。</Page>
+        </Dialogue>
+        <DialogueTarget>Exit</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Sunbaked</Name>
+        <Dialogue>
+            <Page>嗯，没人考虑过日曬石作为一个可行的定居地，但也许我们错了。我喜欢你的思维方式！</Page>
+        </Dialogue>
+        <DialogueTarget>Exit</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>IDK</Name>
+        <Dialogue>
+            <Page>没关系，如果你询问一下别人，我相信他们会给你一些想法的。</Page>
+        </Dialogue>
+        <DialogueTarget>Exit</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Exit</Name>
+        <Dialogue>
+            <Page>如果你需要更多帮助，请与Sunfish交谈。</Page>
+            <Page>——他们本应该和我一起为你进行简报，但你知道他们总是会被卷入其中。</Page>
+            <Page>从后门进去，主入口的楼梯又坍塌了。</Page>
+            <Page>而且嘿，你在完成培训后恰好赶上了一次行星排列！我想这是好运。</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

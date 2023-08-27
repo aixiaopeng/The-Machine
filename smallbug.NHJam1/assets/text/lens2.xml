@@ -1,0 +1,103 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+    <TextBlock>
+        <ID>1</ID>
+        <Text>SAMATU: 我确信大家都知道我为什么召集你们在这里，但我还是要再说一遍：我们已经很长时间没有从家园系统收到任何通信了。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>2</ID>
+        <ParentID>1</ParentID>
+        <Text>OLI: 我们有没有任何关于他们情况的线索？</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>3</ID>
+        <ParentID>2</ParentID>
+        <Text>SAMATU: 他们最后发送的消息只是提到他们陷入了“困境”。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>4</ID>
+        <ParentID>3</ParentID>
+        <Text>MAKALU: 在项目的最后一年，我们得到了一些关于家园政治和财务状况的令人担忧的暗示，也许发生了什么事情？</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>5</ID>
+        <ParentID>4</ParentID>
+        <Text>NELA: 比袭击还糟糕吗？</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>6</ID>
+        <ParentID>5</ParentID>
+        <Text>TEKANA: 必须如此，袭击并没有切断家园世界与殖民地之间的所有通信。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>7</ID>
+        <ParentID>6</ParentID>
+        <Text>SILANA: 或许这个项目的成本使家园陷入了破产？</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>8</ID>
+        <ParentID>7</ParentID>
+        <Text>KASILI: 我们永远不应该建造这个可怕的武器...</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>9</ID>
+        <ParentID>8</ParentID>
+        <Text>MAKALU: 不对，Silana，如果发生这种情况，他们不会停止所有通信，他们会希望我们回家，对吧？</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>10</ID>
+        <ParentID>9</ParentID>
+        <Text>KATA: 这让我感到恶心...</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>11</ID>
+        <ParentID>10</ParentID>
+        <Text>NELA: 敌人肯定又发动了进攻，这次火力更强！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>12</ID>
+        <ParentID>11</ParentID>
+        <Text>MILA: 他们在这几年中没有足够的资源开发出那么多火力。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>13</ID>
+        <ParentID>12</ParentID>
+        <Text>SAMATU: 嗯，无论发生了什么，我们可能只能等待，无论需要多长时间。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>14</ID>
+        <ParentID>13</ParentID>
+        <Text>KATA: 你不是在暗示……？</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>15</ID>
+        <ParentID>14</ParentID>
+        <Text>SAMATU: 我们没有星际飞行能力的船只，也没有用于建造它们的材料。我们别无选择，只能使用核心中的休眠舱。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>16</ID>
+        <ParentID>15</ParentID>
+        <Text>NELA: 这些休眠舱不能永远保持我们的生命！如果我们永远找不到怎么办？</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>17</ID>
+        <ParentID>16</ParentID>
+        <Text>OLI: 我不想去想那个......</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>18</ID>
+        <ParentID>17</ParentID>
+        <Text>MAKALU: 我认为我们别无选择。</Text>
+    </TextBlock>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>lens_recording_explore</FactID>
+            <Condition>18</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>core_lens_recording_rumor</FactID>
+            <Condition>18</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+</NomaiObject>

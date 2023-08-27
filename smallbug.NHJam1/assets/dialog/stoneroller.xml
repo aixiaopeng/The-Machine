@@ -1,0 +1,51 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Stoneroller</NameField>
+
+    <DialogueNode>
+        <Name>Start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>嗨...</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>那是你的石头收藏吗？</Text>
+                <DialogueTarget>Rocks</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>等等，你叫 Stoneroller，正在扔石头吗？</Text>
+                <DialogueTarget>Stones</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Rocks</Name>
+        <Dialogue>
+            <Page>是的！我有 34 块！</Page>
+            <Page>现在只剩下 33 块了！</Page>
+            <Page>我不想再搬家了！我们才刚到这儿！</Page>
+        </Dialogue>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Stones</Name>
+        <Dialogue>
+            <Page>是的？Stoneroller 是一种鱼。</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>嗯，我知道，我们都是以鱼命名的，但是...算了。</Text>
+                <DialogueTarget>Stones_2</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Stones_2</Name>
+        <Dialogue>
+            <Page>你很奇怪。</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

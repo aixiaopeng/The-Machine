@@ -1,0 +1,57 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>sunbaked</ID>
+
+    <Entry>
+        <ID>sunbaked_ruin</ID>
+        <Name>第一个节点</Name>
+        <Curiosity>机器</Curiosity>
+
+        <ExploreFact>
+            <ID>node_1_explore</ID>
+            <Text>先驱者建造了一个叫做“第一个节点”的东西，上面有一个能量收集盘。</Text>
+        </ExploreFact>
+    </Entry>
+
+    <Entry>
+        <ID>access_hatch</ID>
+        <Name>入口舱盖</Name>
+        <Curiosity>战争</Curiosity>
+
+        <RumorFact>
+            <ID>hatch_rumor</ID>
+            <SourceID>sunbaked_ruin</SourceID>
+            <Text>先驱者建造了他们称之为“入口舱盖”的东西，尽管他们认为“入口舱盖”并不准确地描述了他们所建造的东西。</Text>
+        </RumorFact>
+
+        <RumorFact>
+            <ID>hatch_core_rumor</ID>
+            <SourceID>precursors</SourceID>
+            <Text>幸存的先驱者们说我必须使用入口舱盖进入核心。</Text>
+        </RumorFact>
+        <ExploreFact>
+            <ID>hatch_enter_explore</ID>
+            <Text>幸存的先驱者们说入口舱盖正好位于武器的射线路径上，要使用入口舱盖，我必须在武器激活前的几秒钟内站在他们的中间。</Text>
+        </ExploreFact>
+    </Entry>
+
+    <Entry>
+        <ID>precursors</ID>
+        <Name>存活的先驱者</Name>
+        <Curiosity>战争</Curiosity>
+        <IsCuriosity/>
+
+        <ExploreFact>
+            <ID>living_explore</ID>
+            <Text>我在烈日烤石上发现了存活的先驱者！他们聚集在陨石坑中的篝火旁，告诉我当我已经知道他们是谁时再回来... 不管那意味着什么。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>living_rest_explore</ID>
+            <Text>这些先驱者说他们是系统中唯一幸存的先驱者，其他四个人因为冷冻舱老化而丧失。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>living_home_explore</ID>
+            <Text>幸存的先驱者说他们从未收到来自家园系统的消息，但他们肯定早就消失了。</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

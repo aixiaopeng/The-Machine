@@ -1,0 +1,36 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Observations Log</NameField>
+
+    <DialogueNode>
+        <Name>Main</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>[204年秋]</Page>
+            <Page>地震仪记录到了一些非常不寻常的读数。</Page>
+            <Page>似乎在同一时间到处都有干扰！</Page>
+            <Page>就像源头来自行星核心本身一样……</Page>
+            <Page>需要进行更多的研究。</Page>
+            <Page>[204年冬]</Page>
+            <Page>异常寒冷的冬天，其他读数都正常。</Page>
+            <Page>[205年春]</Page>
+            <Page>西风带，它们一点都没有改变！</Page>
+            <Page>就像什么都没发生过，就像上一个冬天根本不存在！</Page>
+            <Page>这一定是个意外，也许“西风季节转变”理论中有些错误吗？</Page>
+            <Page>[205年秋]</Page>
+            <Page>我不明白这些读数是如何可能的。</Page>
+            <Page>它们不仅与我们的气候理论相矛盾，似乎还违背了热力学！</Page>
+            <Page>虽然表面受到的太阳光照量相同，但温度却没有相应的变化，好像能量被简单地摧毁了。</Page>
+            <Page>如果我不能亲眼看到这些影响，我会相信这是广泛的设备故障。</Page>
+            <Page>[205年秋]</Page>
+            <Page>天文学家报告称在冰脊上出现了相反的效应。</Page>
+            <Page>不再有冰了，嗯...。</Page>
+            <Page>[206年春]</Page>
+            <Page>自从我还是个孩子以来，我这个月过去的时间里没有进行过任何研究。我只是在努力求生。</Page>
+            <Page>我们必须尽快找到解决办法。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>climate_records_explore</FactID>
+        </RevealFacts>
+    </DialogueNode>
+</DialogueTree>

@@ -1,0 +1,78 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Carp</NameField>
+    
+    <DialogueNode>
+        <Name>Start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>嘿，新兵，很高兴认识你！</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>嗨，你是谁？</Text>
+                <DialogueTarget>Who</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>在冰峰上生活怎么样？</Text>
+                <DialogueTarget>How</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>其他定居点烧毁时是什么情况？</Text>
+                <DialogueTarget>What</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>再见</Text>
+                <DialogueTarget>Exit</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+    
+    <DialogueNode>
+        <Name>Who</Name>
+        <Dialogue>
+            <Page>我很惊讶你居然没听说过我，我是 Carp，我是预测冰河时期的科学家。</Page>
+            <Page>我也一直在研究冰峰上的气候，它的异常现象与 Warm Embrace 上的很相似，但方向相反。</Page>
+            <Page>热量似乎会在大气中突然出现，就像是被召唤出来一样！</Page>
+            <Page>还有更多，但我年纪大了记性不太好，在 West Settlement 烧毁时，我所有的观测数据都丢失了。</Page>
+            <Page>我希望我没有发现什么真正重要的东西。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>icy_climate_records_rumor</FactID>
+        </RevealFacts>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+    
+    <DialogueNode>
+        <Name>How</Name>
+        <Dialogue>
+            <Page>情况也许还能更糟。我记得在 Warm Embrace 上的第二个冬天，那时天气太冷了，感觉无论怎么努力都暖不起来。</Page>
+            <Page>那是我生命中最困难的时刻。与那个比起来，这里也没那么糟。</Page>
+            <Page>嗯，除了闪电龙卷风。</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>What</Name>
+        <Dialogue>
+            <Page>哇，你直截了当地问起难题了，哈？</Page>
+            <Page>事实上，当那事发生时，我正在场地里，我曾经住在那里。</Page>
+            <Page>一开始，一切似乎都很正常，但后来感觉...不对劲。</Page>
+            <Page>一种奇怪的静电弥漫了空气，一切突然变得静止。</Page>
+            <Page>然后我看见它直接降落在一栋建筑物上！那个可怕的扭曲物体。</Page>
+            <Page>我们都聚集在无线电站里，因为那是离它最远的建筑物，有人在无线电旁坐岗并呼救。</Page>
+            <Page>我非常担心干扰会让信号无法传出，但幸运的是有人听到了我们的呼救。</Page>
+            <Page>Minnow 来了，然后是 Bass，把大家都载上了。</Page>
+            <Page>那以后我再也没回去过。</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Exit</Name>
+        <Dialogue>
+            <Page>再见，年轻的新兵！</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

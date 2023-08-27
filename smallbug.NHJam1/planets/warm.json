@@ -1,0 +1,664 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "name": "Warm Embrace",
+    "starSystem": "smallbug.NHJam1",
+    "Base": {
+        "surfaceGravity": 12,
+        "surfaceSize": 200,
+        "hasMapMarker": true,
+        "invulnerableToSun": true
+    },
+    "Orbit": {
+        "semiMajorAxis": 7000,
+        "primaryBody": "Daylight",
+        "trueAnomaly": 202,
+        "siderealPeriod": 36,
+        "tint": {
+            "r": 114, "g": 179, "b": 219
+        }
+    },
+    "Atmosphere": {
+        "useAtmosphereShader": true,
+        "size": 275,
+        "hasOxygen": true,
+        "hasTrees": true,
+        "hasSnow": true,
+        "atmosphereTint": {
+            "r": 240, "g": 240, "b": 240
+        }
+    },
+    "HeightMap": {
+        "textureMap": "assets/maps/warm_texture.png",
+        "heightMap": "assets/maps/warm_height.png",
+        "minHeight": 185,
+        "maxHeight": 215
+    },
+    "Spawn": {
+        "playerSpawnPoint": {"x": -28.68296, "y": 34.28471, "z": 192.408},
+        "shipSpawnPoint": {"x": -22.05165, "y": -21.01003, "z": 194.286},
+        "startWithSuit": false
+    },
+    "ShipLog": {
+        "xmlFile": "assets/shiplogs/warm.xml",
+        "spriteFolder": "assets/photos",
+        "mapMode": {
+            "revealedSprite": "assets/icons/warm.png",
+            "offset": 0.4
+        }
+    },
+    "Lava": {
+        "size": 250,
+        "curve": [
+            {
+                "time": 0,
+                "value": 0
+            },
+            {
+                "time": 14.95,
+                "value": 0
+            },
+            {
+                "time": 15.00,
+                "value": 1
+            }
+        ]
+    },
+    "Volumes": {
+        "audioVolumes": [
+            {
+                "radius": 250,
+                "audio": "BH_SurfaceAmbience_LP",
+                "volume": 0.5
+            }
+        ]
+    },
+    "Props": {
+        "signals": [
+            {
+                "position": {"x": -54.69296, "y": 38.24079, "z": 188.1753},
+                "detectionRadius": 10,
+                "frequency": "Radio",
+                "audio": "TapeRecorder_LP",
+                "onlyAudibleToScope": false,
+                "name": "North Village Radio House"
+            },
+            {
+                "position": {"x": 66.4608, "y": -143.2323, "z": -134.9437},
+                "frequency": "Radio",
+                "audio": "TapeRecorder_LP",
+                "onlyAudibleToScope": false,
+                "name": "South Village Radio House"
+            }
+        ],
+        "slideShows": [
+            {
+                "position": {"x": 106.5679, "y": -131.211, "z": -120.8031},
+                "rotation": {"x": 0.5880017, "y": -0.5827767, "z": -0.5609148},
+                "reveals": ["astro_records_explore"],
+                "playWithShipLogFacts": ["astro_records_explore"],
+                "slides": [
+                    {"imagePath": "assets/slides/south_village/1.png"},
+                    {"imagePath": "assets/slides/south_village/2.png"},
+                    {"imagePath": "assets/slides/south_village/3.png"},
+                    {"imagePath": "assets/slides/south_village/4.png"},
+                    {"imagePath": "assets/slides/south_village/5.png"}
+                ]
+            }
+        ],
+        "dialogue": [
+            {
+                "position": {
+                    "x": -25.9576416,
+                    "y": 24.86979,
+                    "z": 196.515442
+                },
+                "xmlFile": "assets/dialog/salmon.xml"
+            },
+            {
+                "position": {
+                    "x": 5.324806,
+                    "y": 11.2006512,
+                    "z": 198.4
+                },
+                "xmlFile": "assets/dialog/sunfish.xml"
+            },
+            {
+                "position": {
+                    "x": -44.8236923,
+                    "y": 3.152585,
+                    "z": 198.985153
+                },
+                "xmlFile": "assets/dialog/north_village_log1.xml"
+            },
+            {
+                "position": {
+                    "x": -58.4210129,
+                    "y": 39.7036819,
+                    "z": 184.213165
+                },
+                "xmlFile": "assets/dialog/north_village_log2.xml"
+            },
+            {
+                "position": {
+                    "x": 63.3504868,
+                    "y": -145.326691,
+                    "z": -133.768433
+                },
+                "xmlFile": "assets/dialog/north_village_log2.xml"
+            },
+            {
+                "position": {
+                    "x": 75.55122,
+                    "y": -120.655823,
+                    "z": -154.637665
+                },
+                "xmlFile": "assets/dialog/south_village_log1.xml"
+            }
+        ],
+        "nomaiText": [
+            {
+                "type": "scroll",
+                "position": {"x": -114.0766, "y": 148.6523, "z": -70.18085},
+                "xmlFile": "assets/text/warm_ruin.xml",
+                "arcInfo": [
+                    {},
+                    {
+                        "position": {
+                            "x": -0.8, "y": 0.8
+                        },
+                        "mirror": true,
+                        "zRotation": 45
+                    },
+                    {
+                        "position": {
+                            "x": 0, "y": 0.9
+                        },
+                        "mirror": true
+                    },
+                    {
+                        "zRotation": 180,
+                        "position": {
+                            "x": -1.2, "y": 0.8
+                        },
+                        "variation": 1,
+                        "mirror": true
+                    },
+                    {
+                        "position": {
+                            "x": 0.3, "y": 1.7
+                        },
+                        "zRotation": 270
+                    }
+                ]
+            }
+        ],
+        "details": [
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Kids_PreGame/Props_HEA_Radio/",
+                "position": {
+                    "x": -54.3972168,
+                    "y": 38.0458374,
+                    "z": 184.7819
+                },
+                "rotation": {
+                    "x": 36.8808022,
+                    "y": 62.4273071,
+                    "z": 74.01562
+                }
+            },
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Kids_PreGame/Props_HEA_Radio/",
+                "position": {
+                    "x": 66.24761,
+                    "y": -141.848038,
+                    "z": -133.536819
+                },
+                "rotation": {
+                    "x": 320.641144,
+                    "y": 103.28228,
+                    "z": 211.693069
+                }
+            },
+
+            {
+                "path": "StatueIsland_Body/Sector_StatueIsland/Interactables_StatueIsland/Prefab_NOM_Sign/Props_NOM_Trailmarker",
+                "position": {
+                    "x": -108.360626,
+                    "y": 145.068115,
+                    "z": -84.5438843
+                },
+                "rotation": {
+                    "x": 21.8451958,
+                    "y": 181.278488,
+                    "z": 324.686462
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+                "position": {
+                    "x": -92.86839,
+                    "y": 165.390091,
+                    "z": -68.35147
+                },
+                "rotation": {
+                    "x": 324.698975,
+                    "y": 0.497986376,
+                    "z": 15.0620594
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_Treepot",
+                "position": {
+                    "x": -105.685623,
+                    "y": 158.448822,
+                    "z": -63.4451027
+                },
+                "rotation": {
+                    "x": 315.719,
+                    "y": 44.2696838,
+                    "z": 348.295715
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
+                "position": {
+                    "x": -90.12808,
+                    "y": 156.544678,
+                    "z": -86.3562851
+                },
+                "rotation": {
+                    "x": 30.2190723,
+                    "y": 139.562912,
+                    "z": 317.610931
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_Shelf (2)/Strucutre_NOM_Shelf",
+                "position": {
+                    "x": -113.260307,
+                    "y": 148.768036,
+                    "z": -68.90909
+                },
+                "rotation": {
+                    "x": 9.784374,
+                    "y": 330.102875,
+                    "z": 128.636215
+                }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/Prefab_NOM_Whiteboard (2)",
+                "position": {
+                    "x": -91.78398,
+                    "y": 162.276566,
+                    "z": -75.41835
+                },
+                "rotation": {
+                    "x": 330.4373,
+                    "y": 92.9023361,
+                    "z": 335.131439
+                },
+                "removeChildren": ["ArcSocket/Prefab_NOM_Scroll"]
+            },
+            {
+                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Geometry_TimeLoopExperiment/ControlledByProxy_Arch/Structure_NOM_TimeLoopExperiment/TLE_Exterior/TLE_Exterior_Geo",
+                "position": {
+                    "x": -85.69725,
+                    "y": 133.707855,
+                    "z": -62.87427
+                },
+                "rotation": {
+                    "x": 38.631176,
+                    "y": 214.032349,
+                    "z": 344.6278
+                },
+                "scale": 0.75,
+                "keepLoaded": true
+            },
+
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Hornfels'GrovePivot/Prefab_HEA_Campfire",
+                "alignToNormal": true,
+                "position": {"x": 85.64521, "y": -125.312, "z": -134.929}
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone1/Sector_DreamFireHouse_Zone1",
+                "position": {
+                    "x": 66.39775,
+                    "y": -142.459152,
+                    "z": -133.748474
+                },
+                "rotation": {
+                    "x": 320.971619,
+                    "y": 102.597542,
+                    "z": 212.125778
+                },
+                "scale": 0.75,
+                "keepLoaded": true
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone2/Sector_MapHouse_Zone2/Geo_MapHouse_Zone2/MapHouse",
+                "position": {
+                    "x": 97.89017,
+                    "y": -129.089676,
+                    "z": -120.074486
+                },
+                "rotation": {
+                    "x": 4.754028,
+                    "y": 40.2302361,
+                    "z": 234.211929
+                },
+                "scale": 0.75,
+                "keepLoaded": true
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone2/Sector_MapHouse_Zone2/Geo_MapHouse_Zone2/MapHouse",
+                "position": {
+                    "x": 77.67927,
+                    "y": -117.3652,
+                    "z": -146.4426
+                },
+                "rotation": {
+                    "x": 329.875427,
+                    "y": 219.744736,
+                    "z": 124.296806
+                },
+                "scale": 0.75,
+                "keepLoaded": true
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone2/Sector_MapHouse_Zone2/Geo_MapHouse_Zone2/MapHouse",
+                "position": {
+                    "x": 98.37293,
+                    "y": -110.564461,
+                    "z": -135.357788
+                },
+                "rotation": {
+                    "x": 310.441925,
+                    "y": 93.98191,
+                    "z": 219.704712
+                },
+                "scale": 0.75,
+                "keepLoaded": true
+            },
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": 63.3504868,
+                    "y": -145.326691,
+                    "z": -133.768433
+                },
+                "rotation": {
+                    "x": 330.230042,
+                    "y": 87.5096054,
+                    "z": 220.719986
+                }
+            },
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": 76.50343,
+                    "y": -112.382477,
+                    "z": -150.65
+                },
+                "rotation": {
+                    "x": 50.91168,
+                    "y": 19.2831211,
+                    "z": 223.9135
+                }
+            },
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": 75.0186157,
+                    "y": -114.414688,
+                    "z": -150.26413
+                },
+                "rotation": {
+                    "x": 0.09467842,
+                    "y": 59.35412,
+                    "z": 241.404572
+                }
+            },
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": 76.9459,
+                    "y": -113.578613,
+                    "z": -149.653824
+                },
+                "rotation": {
+                    "x": 48.24362,
+                    "y": 21.8042374,
+                    "z": 224.081863
+                }
+            },
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": 76.03038,
+                    "y": -115.681763,
+                    "z": -148.863449
+                },
+                "rotation": {
+                    "x": 13.1702423,
+                    "y": 52.0772972,
+                    "z": 240.557465
+                }
+            },
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": 76.41365,
+                    "y": -121.285385,
+                    "z": -153.7006
+                },
+                "rotation": {
+                    "x": 312.698547,
+                    "y": 95.8631,
+                    "z": 224.053391
+                }
+            },
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": 76.1412048,
+                    "y": -119.305336,
+                    "z": -155.160858
+                },
+                "rotation": {
+                    "x": 60.5871544,
+                    "y": 336.735016,
+                    "z": 187.0613
+                }
+            },
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": 75.55122,
+                    "y": -120.655823,
+                    "z": -154.637665
+                },
+                "rotation": {
+                    "x": 330.659424,
+                    "y": 220.357025,
+                    "z": 123.993164
+                }
+            },
+
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Character_HEA_Hal_Museum/Villager_HEA_Hal_ANIM_Museum",
+                "position": {
+                    "x": 5.324806,
+                    "y": 11.2006512,
+                    "z": 196.89624
+                },
+                "rotation": {
+                    "x": 311.204163,
+                    "y": 270.336365,
+                    "z": 269.663757
+                }
+            },
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)/Villager_HEA_Hornfels_ANIM_Working",
+				"position": {
+					"x": -25.9576416,
+					"y": 24.86979,
+					"z": 194.515442
+				},
+				"rotation": {
+					"x": 298.7381,
+					"y": 249.688843,
+					"z": 283.698578
+				}
+			},
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": -44.8236923,
+                    "y": 3.152585,
+                    "z": 198.985153
+                },
+                "rotation": {
+                    "x": 352.131165,
+                    "y": 79.34986,
+                    "z": 90.80205
+                }
+            },
+            {
+                "path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder/Props_HEA_Recorder_Geo",
+                "position": {
+                    "x": -58.4210129,
+                    "y": 39.7036819,
+                    "z": 184.213165
+                },
+                "rotation": {
+                    "x": 23.0523357,
+                    "y": 65.21556,
+                    "z": 77.6877747
+                }
+            },
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire",
+                "alignToNormal": true,
+                "position": {"x": -30.76723, "y": 25.94514, "z": 193.6607}
+            },
+
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_ProjectionHouse_Zone4",
+                "scale": 0.75,
+                "position": {
+                    "x": 1.212121,
+                    "y": 1.84453583,
+                    "z": 196.868134
+                },
+                "rotation": {
+                    "x": 313.884277,
+                    "y": 89.85311,
+                    "z": 90.31958
+                },
+                "keepLoaded": true
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone2/Sector_MapHouse_Zone2/Geo_MapHouse_Zone2/MapHouse",
+                "position": {
+                    "x": -10.6429977,
+                    "y": 31.761961,
+                    "z": 194.272919
+                },
+                "rotation": {
+                    "x": 320.04248,
+                    "y": 99.67654,
+                    "z": 75.60532
+                },
+                "scale": 0.75,
+                "keepLoaded": true
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone2/Sector_MapHouse_Zone2/Geo_MapHouse_Zone2/MapHouse",
+                "position": {
+                    "x": -27.5151882,
+                    "y": 49.8792038,
+                    "z": 188.5581
+                },
+                "rotation": {
+                    "x": 288.7272,
+                    "y": 149.912949,
+                    "z": 21.7213783
+                },
+                "scale": 0.75,
+                "keepLoaded": true
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone2/Sector_MapHouse_Zone2/Geo_MapHouse_Zone2/MapHouse",
+                "position": {
+                    "x": -37.2362976,
+                    "y": 4.02812958,
+                    "z": 193.545258
+                },
+                "rotation": {
+                    "x": 34.3493843,
+                    "y": 258.9167,
+                    "z": 269.0377
+                },
+                "scale": 0.75,
+                "keepLoaded": true
+            },
+            {
+                "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone1/Sector_DreamFireHouse_Zone1",
+                "scale": 0.75,
+                "position": {
+                    "x": -54.807785,
+                    "y": 38.0588036,
+                    "z": 185.147491
+                },
+                "rotation": {
+                    "x": 28.4327221,
+                    "y": 63.887413,
+                    "z": 77.1010742
+                },
+                "keepLoaded": true
+            },
+
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector Great Southern Triangle/Fragment 71_GreatSouthernTriangle/Core_Fragment_71_GreatSouthernTriangle/Props_Core_Fragment_71_GreatSouthernTriangle/Ice_BH_Lump_B",
+                "position": {"x": -165.2585, "y": 8.668579, "z": 88.40682}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector Great Southern Triangle/Fragment 71_GreatSouthernTriangle/Core_Fragment_71_GreatSouthernTriangle/Props_Core_Fragment_71_GreatSouthernTriangle/Ice_BH_Lump_B",
+                "position": {"x": -10.58368, "y": -104.2042, "z": 160.5006}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector Great Southern Triangle/Fragment 71_GreatSouthernTriangle/Core_Fragment_71_GreatSouthernTriangle/Props_Core_Fragment_71_GreatSouthernTriangle/Ice_BH_Lump_B",
+                "position": {"x": 98.28619, "y": 100.8486, "z": 125.2633}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector Great Southern Triangle/Fragment 71_GreatSouthernTriangle/Core_Fragment_71_GreatSouthernTriangle/Props_Core_Fragment_71_GreatSouthernTriangle/Ice_BH_Lump_B",
+                "position": {"x": 46.3553, "y": 184.2804, "z": 54.91098}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector Great Southern Triangle/Fragment 71_GreatSouthernTriangle/Core_Fragment_71_GreatSouthernTriangle/Props_Core_Fragment_71_GreatSouthernTriangle/Ice_BH_Lump_B",
+                "position": {"x": 164.7083, "y": 89.84006, "z": -54.27788}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector Great Southern Triangle/Fragment 71_GreatSouthernTriangle/Core_Fragment_71_GreatSouthernTriangle/Props_Core_Fragment_71_GreatSouthernTriangle/Ice_BH_Lump_B",
+                "position": {"x": -148.3985, "y": -103.6718, "z": -92.71007}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector Great Southern Triangle/Fragment 71_GreatSouthernTriangle/Core_Fragment_71_GreatSouthernTriangle/Props_Core_Fragment_71_GreatSouthernTriangle/Ice_BH_Lump_B",
+                "position": {"x": 101.124, "y": -169.235, "z": -46.36032}
+            },
+            {
+                "alignToNormal": true,
+                "path": "BrittleHollow_Body/Sector_BH/Sector Great Southern Triangle/Fragment 71_GreatSouthernTriangle/Core_Fragment_71_GreatSouthernTriangle/Props_Core_Fragment_71_GreatSouthernTriangle/Ice_BH_Lump_B",
+                "position": {"x": -134.9292, "y": 120.3767, "z": -72.15281}
+            }
+        ]
+    }
+}

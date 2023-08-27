@@ -1,0 +1,76 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Trout</NameField>
+
+    <DialogueNode>
+        <Name>Start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>嘿，小家伙，你的第一次飞行怎么样？</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>你对住宿满意吗？</Text>
+                <DialogueTarget>Formal</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>有什么八卦吗？</Text>
+                <DialogueTarget>Gossip</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>再见</Text>
+                <DialogueTarget>Exit</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Formal</Name>
+        <Dialogue>
+            <Page>现在你已经是 OWR 的一员了，竟然变得这么正式了，是吗，小家伙？</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>妈妈，我只是想做好我的工作……</Text>
+                <DialogueTarget>Formal_2</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Formal_2</Name>
+        <Dialogue>
+            <Page>哦好吧，我陪你玩玩。</Page>
+            <Page>这里又狭小，又潮湿，家具也很差……但是我对于离开那个冰冷的地方感到无比幸福。</Page>
+            <Page>"Warm Embrace"（温暖拥抱），我们选了这个名字，真是为自己招来不幸啊，是吗？</Page>
+            <Page>在那边，我特别为你担心。</Page>
+            <Page>而在这里，空气温暖，有食物，原来这就是我们所需要的。</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>cramped_explore</FactID>
+        </RevealFacts>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Gossip</Name>
+        <Dialogue>
+            <Page>让我想想……</Page>
+            <Page>Darter 和 Shiner 长得很健壮，我真的很担心饥饿会影响他们的成长。</Page>
+            <Page>Sturgeon 因为晚上太晚钓鱼，又一次从码头上摔下来，我有时会为他们担心……</Page>
+            <Page>而且在 Sturgeon 和 Walleye 必须从 OWR 的新建筑搬出来后，我们变得更加拥挤了。</Page>
+            <Page>我听说是你的工作来解决这个问题，是吗？</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>cramped_explore</FactID>
+        </RevealFacts>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Exit</Name>
+        <Dialogue>
+            <Page>小家伙，飞行平安！</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

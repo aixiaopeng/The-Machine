@@ -1,0 +1,129 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Sturgeon</NameField>
+
+    <DialogueNode>
+        <Name>Start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>嘿，小子！</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>钓鱼怎么样？</Text>
+                <DialogueTarget>Fishing</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>你有什么好的钓鱼故事吗？</Text>
+                <DialogueTarget>Story</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>再见</Text>
+                <DialogueTarget>Exit</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Fishing</Name>
+        <Dialogue>
+            <Page>呸，Warm Embrace 那儿的钓鱼更好！</Page>
+            <Page>这里的钓鱼需要太多耐心了！</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>那是因为潮汐一半的时间太低，你的线只是拖在石头上！</Text>
+                <DialogueTarget>Fishing_Tide</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>至少还有鱼，我们在搬到这儿之前几乎要饿死了！</Text>
+                <DialogueTarget>Fishing_Fish</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>总比吃海藻好！</Text>
+                <DialogueTarget>Fishing_Seaweed</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Fishing_Tide</Name>
+        <Dialogue>
+            <Page>你说什么？潮汐？</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Fishing_Fish</Name>
+        <Dialogue>
+            <Page>我知道，我知道，但我有权利抱怨，好吗？</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Fishing_Seaweed</Name>
+        <Dialogue>
+            <Page>我可怜那些在 Icy Ridges 的笨蛋。我很高兴住在这里，这里有真正的食物！</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Story</Name>
+        <Dialogue>
+            <Page>啊，我有个好故事！</Page>
+            <Page>那是我搬到这儿不久后，我在敞开的海域上用筏子钓鱼...</Page>
+            <Page>突然我的钓线上被什么东西绊住了！我往筏子的边上一看，看到水下有一种怪异的发光。</Page>
+            <Page>接着我感受到一股巨大的冲击，好像什么东西给我的钓线通了电！我完全被打晕了！</Page>
+            <Page>等我醒过来，我的鱼竿都被烧成灰了！</Page>
+            <Page>那是我最后一次在敞开的水域钓鱼。</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>是真的吗？</Text>
+                <DialogueTarget>Story_True</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>我不相信那个！</Text>
+                <DialogueTarget>Story_Fake</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>哇，真是个好故事！</Text>
+                <DialogueTarget>Story_Story</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Story_True</Name>
+        <Dialogue>
+            <Page>当然是真的！</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Story_Fake</Name>
+        <Dialogue>
+            <Page>不管你信不信，那都发生了！</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Story_Story</Name>
+        <Dialogue>
+            <Page>这不只是个故事，它是真实的！</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Exit</Name>
+        <Dialogue>
+            <Page>回头见，小子！</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

@@ -1,0 +1,93 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>icy</ID>
+
+    <Entry>
+        <ID>icy_settlement</ID>
+        <Name>东方定居点</Name>
+        <Curiosity>逃离</Curiosity>
+
+        <RumorFact>
+            <ID>aided_rumor</ID>
+            <SourceID>tides_settlement</SourceID>
+            <Text>冰岭东方定居点在冰岭西方定居点发生自然灾害后向饥饿潮定居点寻求援助。</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>underpopulated_explore</ID>
+            <Text>由于人们对其不可预测的天气感到恐惧，冰岭正在迅速减少人口。</Text>
+        </ExploreFact>
+    </Entry>
+    
+    <Entry>
+        <ID>destroyed_settlement</ID>
+        <Name>被摧毁的定居点</Name>
+        <Curiosity>逃离</Curiosity>
+        
+        <RumorFact>
+            <ID>destroyed_settlement_rumor</ID>
+            <SourceID>north_village</SourceID>
+            <Text>Salmon提到了最近在冰岭上被摧毁的定居点。</Text>
+        </RumorFact>
+        <RumorFact>
+            <ID>tornadoed_settlement_rumor</ID>
+            <SourceID>icy_settlement</SourceID>
+            <Text>东方定居点收到了西方定居点的传输，称其正遭受一场龙卷风的摧毁，并请求援助。</Text>
+        </RumorFact>
+        <RumorFact>
+            <ID>icy_climate_records_rumor</ID>
+            <SourceID>icy_settlement</SourceID>
+            <Text>Carp表示他们在被摧毁的定居点留下了对冰岭气候的观察。</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>destroyed_settlement_explore</ID>
+            <Text>冰岭西方定居点被突然出现的龙卷风摧毁了。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>icy_climate_records_explore</ID>
+            <Text>冰岭上似乎无处不在地产生热量，违反了物理定律，与温馨怀抱的情况恰好相反。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>icy_climate_records_2_explore</ID>
+            <Text>冰岭上电荷不断积累。</Text>
+        </ExploreFact>
+    </Entry>
+
+    <Entry>
+        <ID>icy_ruin</ID>
+        <Name>第四节点</Name>
+        <Curiosity>机器</Curiosity>
+
+        <RumorFact>
+            <ID>icy_ruin_rumor</ID>
+            <SourceID>icy_settlement</SourceID>
+            <RumorName>先驱者废墟</RumorName>
+            <Text>Minnow说在东方定居点附近有一个先驱者废墟。</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>node_4_explore</ID>
+            <Text>先驱者建造了一个被称为“最终节点”的东西。</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>node_heat_explore</ID>
+            <Text>其中一位先驱者Nela警告说，该节点在充电时会积累大量的热量和电力，增加启动时间。</Text>
+        </ExploreFact>
+
+        <Entry>
+            <ID>icy_ruin_2</ID>
+            <Name>先驱者日志</Name>
+            <Curiosity>战争</Curiosity>
+
+            <ExploreFact>
+                <ID>concerns_explore</ID>
+                <Text>其中一位先驱者Kasili对他们正在建造的武器表示道德上的担忧，认为其他先驱者为了复仇而盲目行动。</Text>
+            </ExploreFact>
+            <ExploreFact>
+                <ID>weapon_purpose_explore</ID>
+                <Text>先驱者正在建造一种武器，以对攻击他们的敌人进行复仇。</Text>
+            </ExploreFact>
+        </Entry>
+    </Entry>
+</AstroObjectEntry>

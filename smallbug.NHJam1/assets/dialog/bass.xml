@@ -1,0 +1,76 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Bass</NameField>
+
+    <DialogueNode>
+        <Name>Start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>新兵！听说你刚刚完成了训练，我很高兴看到你现在有了自己的飞船！</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>你在忙什么？</Text>
+                <DialogueTarget>WYD</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>这附近有什么可以探索的？</Text>
+                <DialogueTarget>Explore</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>那个水柱有多危险？</Text>
+                <DialogueTarget>Water Column</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>再见</Text>
+                <DialogueTarget>Exit</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>WYD</Name>
+        <Dialogue>
+            <Page>现在我在休息，我们还在将我们的行动基地迁移到这里。</Page>
+            <Page>我们想要为它建造一座新建筑，但这个岛上已经没有足够干燥或平坦的地方了！</Page>
+            <Page>所以目前我们只是占据了这里的一个住宅（当然获得了许可）。</Page>
+            <Page>也许你可以帮忙找到一个好的位置？</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>new_base_explore</FactID>
+        </RevealFacts>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Explore</Name>
+        <Dialogue>
+            <Page>在海底有几处先驱者遗迹可以参观。</Page>
+            <Page>不过我建议小心，其中一处正在泄露某种奇怪的能量，把我送进去的探测器都坏了！</Page>
+            <Page>当然，一定要注意不要淹死。</Page>
+            <Page>我一直以为先驱者只存在于 Warm Embrace 行星，但我们在每个行星上都发现了他们的存在！</Page>
+        </Dialogue>
+        <RevealFacts>
+            <FactID>tides_ruin_rumor</FactID>
+            <FactID>tides_ghost_ruin_rumor</FactID>
+        </RevealFacts>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Water Column</Name>
+        <Dialogue>
+            <Page>并不像你想的那么危险！</Page>
+            <Page>如果被卷入其中，可能会有点疼，但有时候甚至不会减速你。</Page>
+            <Page>真正需要担心的是轨道上的黑洞。我们发送了一个探测器，从来没有收到回信！我建议离它远一点。</Page>
+        </Dialogue>
+        <DialogueTarget>Start</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Exit</Name>
+        <Dialogue>
+            <Page>再见，新兵！</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

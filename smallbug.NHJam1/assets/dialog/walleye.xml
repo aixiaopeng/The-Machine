@@ -1,0 +1,26 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Walleye</NameField>
+
+    <DialogueNode>
+        <Name>Start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>嘿，小家伙，飞行怎么样？</Page>
+            <Page>想尝尝这个鱼酱吗？</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>噢，不了。</Text>
+                <DialogueTarget>Ew</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Ew</Name>
+        <Dialogue>
+            <Page>你怎么还是不喜欢鱼酱呢？你是在鱼的环境里长大的啊！</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

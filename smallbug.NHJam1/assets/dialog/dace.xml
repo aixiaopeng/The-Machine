@@ -1,0 +1,36 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Dace</NameField>
+
+    <DialogueNode>
+        <Name>Start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>这些厚厚的云层遮住了所有的星星！</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>不过你还是能听到信号吧！</Text>
+                <DialogueTarget>Signals</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>你为什么要找星星呢？</Text>
+                <DialogueTarget>Why</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Signals</Name>
+        <Dialogue>
+            <Page>我知道，但我听到的都是无聊的无线电信号！我想看星星！</Page>
+        </Dialogue>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>Why</Name>
+        <Dialogue>
+            <Page>因为它们很酷！而且我已经看腻了无聊的云朵。</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

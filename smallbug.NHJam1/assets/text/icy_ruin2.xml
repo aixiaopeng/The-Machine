@@ -1,0 +1,76 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+    <TextBlock>
+        <ID>1</ID>
+        <Text>KASILI: 我不能告诉其他人，但我对这个项目产生了疑虑...</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>2</ID>
+        <ParentID>1</ParentID>
+        <Text>KASILI: 在我上工程学院的时候，我被教导不要造成任何伤害。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>3</ID>
+        <ParentID>2</ParentID>
+        <Text>KASILI: 在那次袭击之后，每个人似乎都忘记了这一点，都以复仇的名义。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>4</ID>
+        <ParentID>3</ParentID>
+        <Text>KASILI: 必须有比基本通过另一个物种的母星射出一个巨大的激光来进行复仇更好、更渐进、更和平的反应方式！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>5</ID>
+        <ParentID>4</ParentID>
+        <Text>KASILI: 这是我们想要花费我们不断减少的资源的方式吗？</Text>
+    </TextBlock>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>concerns_explore</FactID>
+            <Condition>5</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>weapon_purpose_explore</FactID>
+            <Condition>5</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+</NomaiObject>
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+    <TextBlock>
+        <ID>1</ID>
+        <Text>KASILI: 我不能告诉其他人，但我对这个项目产生了疑虑...</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>2</ID>
+        <ParentID>1</ParentID>
+        <Text>KASILI: 在我上工程学院的时候，我被教导不要造成任何伤害。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>3</ID>
+        <ParentID>2</ParentID>
+        <Text>KASILI: 在那次袭击之后，每个人似乎都忘记了这一点，都以复仇的名义。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>4</ID>
+        <ParentID>3</ParentID>
+        <Text>KASILI: 必须有比基本通过另一个物种的母星射出一个巨大的激光来进行复仇更好、更渐进、更和平的反应方式！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>5</ID>
+        <ParentID>4</ParentID>
+        <Text>KASILI: 这是我们想要花费我们不断减少的资源的方式吗？</Text>
+    </TextBlock>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>concerns_explore</FactID>
+            <Condition>5</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>weapon_purpose_explore</FactID>
+            <Condition>5</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+</NomaiObject>

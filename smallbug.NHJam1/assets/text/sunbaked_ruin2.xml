@@ -1,0 +1,38 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+    <TextBlock>
+        <ID>1</ID>
+        <Text>KATA: 好的，访问舱口完成了。访问舱口？访问舱口并不像准确描述我们刚刚建造的东西！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>2</ID>
+        <ParentID>1</ParentID>
+        <Text>OLI: 为什么我们需要再次经历那么多工作呢？我是说，他们不可能通过这么坚固的核心进入核心，对吧？</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>4</ID>
+        <ParentID>1</ParentID>
+        <Text>MILA: 更像是访问滑梯！</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>3</ID>
+        <ParentID>2</ParentID>
+        <Text>TEKANA: 不要低估他们。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>5</ID>
+        <ParentID>4</ParentID>
+        <Text>KATA: 请原谅我，是伟大的访问滑梯通向全能核心！</Text>
+    </TextBlock>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>hatch_rumor</FactID>
+            <Condition>1</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>core_access_hatch_rumor</FactID>
+            <Condition>5</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+</NomaiObject>

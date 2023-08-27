@@ -1,0 +1,44 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+    <TextBlock>
+        <ID>1</ID>
+        <Text>[56/7432] 主星系：递送了透镜阵列。好好利用这个，我们资源和政治支持都很有限。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>2</ID>
+        <ParentID>1</ParentID>
+        <Text>[89/7432] 安装：武器已经完成，等待你的命令，主星系。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>3</ID>
+        <ParentID>2</ParentID>
+        <Text>[89/7432] 主星系：坚持住，安装。我们现在处于困难境地。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>4</ID>
+        <ParentID>3</ParentID>
+        <Text>[99/7432] 安装：主星系，情况如何？我们已经有一段时间没有收到你的消息了。</Text>
+    </TextBlock>
+    <TextBlock>
+        <ID>5</ID>
+        <ParentID>4</ParentID>
+        <Text>[100/7432] 安装：主星系，情况如何？</Text>
+    </TextBlock>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>lens_rumor</FactID>
+            <Condition>1</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>weapon_complete_explore</FactID>
+            <Condition>2</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+    <ShipLogConditions>
+        <RevealFact>
+            <FactID>disappear_explore</FactID>
+            <Condition>5</Condition>
+        </RevealFact>
+    </ShipLogConditions>
+</NomaiObject>
